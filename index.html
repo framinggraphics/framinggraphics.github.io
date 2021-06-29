@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>     
+Home - Framing graphics
+</title>  
+<link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon">  
+</head>
+<body>
+<script>
+function show(id) {
+    document.getElementById(id).style.visibility = "visible";
+}
+function hide(id) {
+    document.getElementById(id).style.visibility = "hidden";
+}
+</script>
+
+<div id="navbar">
+  <a href="/index.html"><img src="/images/res/logo.svg" height="25px" width="20px" style="padding-top: 5px; margin-left: -2px;" onMouseOver="show('data')" onMouseOut="hide('data')"></a>
+</div>
+<div class="row" id="row">
+  <div class="numbercolumn">
+     &nbsp;
+  </div>
+  <div class="column data" id="data" style="padding-top: 2px;">
+    <p>36 Films</p>
+    <p>3633 Frames</p>
+    <p>278898''</p>
+    <p>4648,3'</p>
+    <p>77,4716667h</p>
+    <p>3,227986 Days</p>
+    <p>47 Designers</p>
+    <p>1 Project</p>
+  
+   </div>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
