@@ -158,6 +158,22 @@ body {
   padding-right: 5px;
 }
 
+.threecolumns {
+  float: left;
+  width: calc(24.875%*3);
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fourcolumns {
+  float: left;
+  width: calc(24.875%*4);
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .row {
   padding-left: 30px;
   padding-right: 0px;
@@ -241,7 +257,7 @@ img[id^="classification"] {
   top: 0;
   left: 0;
   background-color: var(--base-color);
-  height: 13px;
+  height: 15px;
 }
 
 #topblock {
@@ -317,6 +333,7 @@ p[id^="title"] {
 }
 
 .footer {
+  padding-top: 100px;
   font-family:"SuisseIntl", normal;
   font-size: 14px;
 }
@@ -406,3 +423,8 @@ input.chk-btn:checked + label:hover {
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {color: gray;}
+
+  #randomsentence {
+    font-size: 144px;
+    line-height: 120px;
+  }
