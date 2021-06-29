@@ -239,7 +239,9 @@ img[id^="classification"] {
   width: 100%;
   z-index: 999; 
   top: 0;
-  left: 0; 
+  left: 0;
+  background-color: var(--base-color);
+  height: 13px;
 }
 
 #topblock {
@@ -316,7 +318,7 @@ p[id^="title"] {
 
 .footer {
   font-family:"SuisseIntl", normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .data {
@@ -388,9 +390,11 @@ input.chk-btn:checked + label:hover {
   .dropdown-content {
     display: none;
     position: absolute;
+    margin-left: -3px;
     background-color: var(--base-color);
     z-index: 99;
     width: 100%;
+    padding: 6px;
   }
   
   .dropdown-content a {
