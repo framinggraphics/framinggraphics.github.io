@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href="/css/lightbox.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 <meta charset="utf-8">
@@ -1537,6 +1538,7 @@ A - Iron Man - Framing graphics
   <div class="column">
     <span>Framing graphics</span>
    <img src="/images/res/logo.svg" height="13px" width="13px" class="logo">
+
   
    </div>
   <div class="column">
@@ -1552,5 +1554,16 @@ A - Iron Man - Framing graphics
 </div>
 <script src="/js/script.js"></script>
 <script src="/js/filter.js"></script>
+<script src="/js/lightbox.js"></script>
+
+
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+  })
+</script>
+
+
 </body>
 </html>
