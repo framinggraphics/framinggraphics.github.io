@@ -686,6 +686,7 @@ function hide(id) {
     document.getElementById(id).style.display = "none";
 }
 
+/*
 var distance1 = $('#anchor-point1').offset().top,
     distance2 = $('#anchor-point2').offset().top,
     distance3 = $('#anchor-point3').offset().top,
@@ -721,7 +722,9 @@ $(window).scroll(function() {
     } else {
         $('#title4').addClass('invisibletitle');
     }
-});
+}); 
+
+*/
 
     function UncheckAll(){ 
         var w = document.getElementsByTagName('input'); 
