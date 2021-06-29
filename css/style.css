@@ -45,6 +45,7 @@
 
 body {
   font-family: 'SuisseIntl', normal;
+  background-color: var(--base-color);
 }
 
 * {
@@ -233,15 +234,28 @@ img[id^="classification"] {
   width: 100%;
 }
 
-
+#menu {
+  position: fixed;
+  width: 100%;
+  z-index: 999; 
+  top: 0;
+  left: 0; 
+}
 
 #topblock {
+  padding-top: 50px;
   height: 150px;
 }
 
 /* Testo */
 
-p.title {
+.sitename {
+  font-family: 'SuisseIntl', normal;
+  font-size: 16px;
+  color: var(--accent-color)
+}
+
+.movietitle {
   font-family: 'SuisseIntl', normal;
   font-size: 16px;
   color: gray;
@@ -292,7 +306,7 @@ p[id^="title"] {
   right: 5px;
   background-color: var(--base-color);
   color: var(--accent-color);
-  width: calc(calc(24.875*(calc(100% - 30px))/100)/2);
+  width: calc(calc(24.875*(calc(100% - 30px))/100)/3);
   z-index: 999;
   padding-left: 10px;
   font-family: 'Monospac821', normal;
@@ -357,3 +371,34 @@ input.chk-btn:checked + label:hover {
 	50% { background:#fff } 
 	100% { background:transparent } 
 	}
+
+  .dropbtn {
+    color: var(--accent-color);
+  }
+
+  .dropbtn:hover {
+    color: gray;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--base-color);
+    z-index: 99;
+    width: 100%;
+  }
+  
+  .dropdown-content a {
+    color: var(--accent-color);
+  }
+  
+  .dropdown-content a:hover {color: gray;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {color: gray;}
