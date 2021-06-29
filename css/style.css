@@ -61,7 +61,7 @@ body {
   width: 26px;
   height: calc(100% - 0px);
   background-color: var(--base-color);
-  z-index: 999;
+  z-index: 899;
   font-family: 'SuisseIntl', normal;
   font-size:15px;
   transition: 0.3s;
@@ -203,7 +203,7 @@ div.wrapper {
   padding-left: 3px;
   padding-right: 3px;
   font-family: 'Monospac821', normal;
-  z-index: 899;
+  z-index: 299;
 }
 
 .timecodebg {
@@ -211,7 +211,7 @@ div.wrapper {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 799;
+  z-index: 199;
 }
 
 div[id^="frame"] {
@@ -232,6 +232,8 @@ span[id^="code"] {
 img[id^="classification"] {
   width: 100%;
 }
+
+
 
 #topblock {
   height: 150px;
@@ -261,7 +263,7 @@ div.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index: 998;
+  z-index: 799;
   background-color: var(--base-color);
 }
 
@@ -291,7 +293,7 @@ p[id^="title"] {
   background-color: var(--base-color);
   color: var(--accent-color);
   width: calc(calc(24.875*(calc(100% - 30px))/100)/2);
-  z-index: 998;
+  z-index: 999;
   padding-left: 10px;
   font-family: 'Monospac821', normal;
   font-size: 16px;
