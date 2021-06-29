@@ -726,6 +726,16 @@ $(window).scroll(function() {
 
 */
 
+function randomtext() {
+    var randomtxt=[
+        'Annie Atkins',
+        'Marco De Matteo',
+        'Karen TenEyck', ];
+    return randomtxt[Math.floor((Math.random() * 3.99))];
+}
+
+document.getElementById("randomsentence").innerHTML = randomtext();
+
     function UncheckAll(){ 
         var w = document.getElementsByTagName('input'); 
         for(var i = 0; i < w.length; i++){ 
