@@ -35,14 +35,6 @@
   text-decoration: underline;
 }
 
-.opacity100 {
-  opacity: 100%;
-}
-
-.opacitylow {
-  opacity: 10%;
-}
-
 body {
   font-family: 'SuisseIntl', normal;
   background-color: var(--base-color);
