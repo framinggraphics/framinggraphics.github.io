@@ -2,6 +2,10 @@
 
 $(document).ready(function () {
 
+    function chwidth(width) {
+        document.getElementById('navbar').style.width = width;
+        }
+
     var indexnumber = Array.from(Array(104).keys())
     var code = [
         "Aa1",

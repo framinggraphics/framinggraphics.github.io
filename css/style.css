@@ -249,7 +249,7 @@ img[id^="classification"] {
   top: 0;
   left: 0;
   background-color: var(--base-color);
-  height: 15px;
+  height: 22px;
 }
 
 #topblock {
