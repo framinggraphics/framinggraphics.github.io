@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+    var indexnumber = Array.from(Array(104).keys())
+
 function createclasses() {
     var classes = [
         "context application linear",
@@ -224,7 +226,7 @@ function creategallery() {
         "/images/A/1_54_43.png",
         "/images/A/1_57_18.png", ];
 
-        var screencapthumb = [
+    var screencapthumb = [
             "/images/A/thumb_0_01_11.png",
             "/images/A/thumb_0_02_11.png",
             "/images/A/thumb_0_03_28.png",
@@ -329,11 +331,16 @@ function creategallery() {
             "/images/A/thumb_1_53_45.png",
             "/images/A/thumb_1_54_43.png",
             "/images/A/thumb_1_57_18.png", ];
+            
+ 
+    /* for (var i=0; i < screencap.length; i++) */
 
     $('.screencapwrapper').each(function (i) {
 
-        $(this).append('<img src="' + screencapthumb[i % screencapthumb.length] + '" data-src=' + screencap[i % screencap.length] + ' class="screencap lazyload" id="screencap'+ i % screencap.lenght + '"/>');
+        $(this).append('<img src="' + screencapthumb[i % screencapthumb.length] + '" data-src=' + screencap[i % screencap.length] + ' class="screencap lazyload" id="screencap'+ indexnumber[i % indexnumber.length] + '" data-lightbox="lightbox'+ indexnumber[i % indexnumber.length] + '"/>');
     });
+    
+
 }
 
 function createtimecodes() {
@@ -445,7 +452,7 @@ function createtimecodes() {
 
     $('.wrapper').each(function (i) {
 
-        $(this).append('<div class="mouseovercontainer" onMouseOver="show(\'frame' + i % timecode.length + '\')" onMouseOut="hide(\'frame' + i % timecode.length + '\')"><div class="timecodebg" id="frame' + i % timecode.length + '"><span class="timecode">' + timecode[i % timecode.length] + '</span></div></div>');
+        $(this).append('<div class="mouseovercontainer" onMouseOver="show(\'frame' + indexnumber[i % indexnumber.length] + '\')" onMouseOut="hide(\'frame' + indexnumber[i % indexnumber.length] + '\')"><div class="timecodebg" id="frame' + indexnumber[i % indexnumber.length] + '"><span class="timecode">' + timecode[i % timecode.length] + '</span></div></div>');
     });
 }
 
@@ -675,7 +682,7 @@ function createcodes() {
 
     $('.classification').each(function (i) {
 
-        $(this).prepend('<span id="code' + i % code.length + '">' + code[i % code.length] + '</span><br>');
+        $(this).prepend('<span id="code' + indexnumber[i % indexnumber.length] + '">' + code[i % code.length] + '</span><br>');
     });
 }
 

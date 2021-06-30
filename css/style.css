@@ -393,6 +393,7 @@ input.chk-btn:checked + label:hover {
 
   .dropbtn {
     color: var(--accent-color);
+    cursor: pointer;
   }
 
   .dropbtn:hover {
