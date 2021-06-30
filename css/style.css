@@ -426,6 +426,13 @@ input.chk-btn:checked + label:hover {
   .dropdown:hover .dropbtn {color: gray;}
 
   #randomsentence {
-    font-size: 144px;
-    line-height: 120px;
+    font-size: 96px;
+    line-height: 90px;
+  }
+
+ .team {
+    font-family: 'SuisseIntl', normal;
+    font-size: 96px;
+    line-height: 90px;
+    color: var(--accent-color);
   }
