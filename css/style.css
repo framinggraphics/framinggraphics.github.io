@@ -428,3 +428,7 @@ input.chk-btn:checked + label:hover {
     line-height: 90px;
     color: var(--accent-color);
   }
+
+  a {
+    color: var(--accent-color);
+  }
