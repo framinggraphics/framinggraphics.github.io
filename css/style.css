@@ -432,3 +432,7 @@ input.chk-btn:checked + label:hover {
   a {
     color: var(--accent-color);
   }
+
+  .info1 {
+    width: 100%;
+  }
