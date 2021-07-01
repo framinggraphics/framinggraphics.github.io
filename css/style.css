@@ -4,8 +4,8 @@
     --accent-color: #000;
     --black-svg: invert(0%) sepia(100%) saturate(2%) hue-rotate(150deg) brightness(107%) contrast(101%); /* Use with "filter:" */
     --white-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
-    --black-png: invert(0);
-    --white-png: invert(1);
+    --black-png: invert(1);
+    --white-png: invert(0);
     --cursor-fg: url('/images/res/cursor.png') 10 5, auto;
   }
 /* Make use of the variables like color: var(--base-color); */
@@ -16,8 +16,8 @@
     --accent-color: #fff;
     --white-svg: invert(0%) sepia(100%) saturate(2%) hue-rotate(150deg) brightness(107%) contrast(101%); /* Use with "filter:" */
     --black-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
-    --black-png: invert(1);
-    --white-png: invert(0);
+    --black-png: invert(0);
+    --white-png: invert(1);
   }
 }
 
@@ -26,8 +26,12 @@
   --accent-color: #fff;
   --white-svg: invert(0%) sepia(100%) saturate(2%) hue-rotate(150deg) brightness(107%) contrast(101%); /* Use with "filter:" */
   --black-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
-  --black-png: invert(1);
-  --white-png: invert(0);
+  --black-png: invert(0);
+  --white-png: invert(1);
+}
+
+html body {
+  height: 100%;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -374,6 +378,21 @@ p[id^="title"] {
   font-size: 14px;
 }
 
+.footerwrapper {
+  min-height: 100%;
+}
+
+.footer2 {
+  height: 50px;
+  margin-top: -50px;
+}
+
+.fixedfooter {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
 .data {
   visibility: hidden;
 }
@@ -450,6 +469,7 @@ span.filter-categories {color: var(--accent-color);}
     z-index: 99;
     width: 100%;
     padding: 6px;
+    padding-bottom: 16px;
   }
   
   .dropdown-content a {
@@ -481,7 +501,7 @@ span.filter-categories {color: var(--accent-color);}
   .info1 {
     width: 100%;
     height: 20px;
-    filter: invert(1);
+    filter: var(--black-png);
   }
 
   .infobg {
@@ -539,7 +559,7 @@ button:hover {
 }
 
 .linkmenu {
-  font-family: Monospac821, normal;
+  font-family: 'Monospac821', normal;
   color: var(--accent-color);
   font-size: 12px;
 }
@@ -548,3 +568,31 @@ button:hover {
   color: gray;
 }
 
+.form {
+  width: 100%;
+  border: 1px solid var(--accent-color);
+  height: calc(100%/3.333);
+  margin-bottom: 5px;
+  /*padding-bottom: 10px; */
+  background-color: var(--base-color);
+  font-family: 'SuisseIntl', normal;
+}
+
+.formsubmit{
+  width: 13%;
+  border: 1px solid var(--accent-color);
+  height: 25px;
+  padding-bottom: 10px;
+  background-color: var(--accent-color);
+  font-family: 'SuisseIntl', normal;
+  text-align: center;
+  color: var(--base-color);
+}
+
+.form:active{
+  border: 1px solid gray;
+}
+
+.arrow {
+  filter: var(--black-svg);
+}
