@@ -10,7 +10,10 @@
 <title>
 Oooops - Framing graphics
 </title>  
-<link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon">  
+<link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon">
+<script>
+  const colorScheme = localStorage.getItem("color-scheme") || "light-mode";
+</script>
 </head>
 <body>
 
@@ -22,7 +25,7 @@ Oooops - Framing graphics
       &nbsp;
     </div>
     <div class="column">
-      <span>Framing graphics</span> <span class="movietitle">404</span>
+      <span class="sitetitle">Framing graphics</span> <span class="movietitle">404</span>
     </div>
     <div class="column">
       <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">Resources</span>
@@ -53,27 +56,29 @@ Oooops - Framing graphics
 </div>
 
 <!-- FOOTER -->
-
-<!-- <div class="row footer" id="footer">
+<!--<div class="row footer" id="footer">
   <div class="numbercolumn">
     &nbsp;
   </div>
   <div class="column">
     <span>Framing graphics</span>
    <img src="/images/res/logo.svg" height="13px" width="13px" class="logo">
-  
    </div>
   <div class="column">
     <p>Last updated July 5th 2021</p>
   </div>
   <div class="column">
-
+    &nbsp;
   </div>
   <div class="column">
-
+  <button id="topbtn" onclick="topFunction()" title="Go to top">↑</button>
   </div>
-</div> -->
+</div>-->
+<!-- END OF FOOTER -->
+
 <script src="/js/script.js"></script>
 <script src="/js/filter.js"></script>
+<script src="/js/darkmode.js"></script>
+
 </body>
 </html>

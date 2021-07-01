@@ -689,7 +689,7 @@ function createcodes() {
 
     $('.classification').each(function (i) {
 
-        $(this).prepend('<span id="code' + indexnumber[i % indexnumber.length] + '">' + code[i % code.length] + '</span><br>');
+        $(this).prepend('<span id="code' + indexnumber[i % indexnumber.length] + '" style="color: var(--accent-color);">' + code[i % code.length] + '</span><br>');
     });
 }
 

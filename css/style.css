@@ -4,9 +4,45 @@
     --accent-color: #000;
     --black-svg: invert(0%) sepia(100%) saturate(2%) hue-rotate(150deg) brightness(107%) contrast(101%); /* Use with "filter:" */
     --white-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
+    --black-png: invert(0);
+    --white-png: invert(1);
+    --cursor-fg: url('/images/res/cursor.png') 10 5, auto;
   }
 /* Make use of the variables like color: var(--base-color); */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-color: #000;
+    --accent-color: #fff;
+    --white-svg: invert(0%) sepia(100%) saturate(2%) hue-rotate(150deg) brightness(107%) contrast(101%); /* Use with "filter:" */
+    --black-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
+    --black-png: invert(1);
+    --white-png: invert(0);
+  }
+}
+
+.dark-mode {
+  --base-color: #000;
+  --accent-color: #fff;
+  --white-svg: invert(0%) sepia(100%) saturate(2%) hue-rotate(150deg) brightness(107%) contrast(101%); /* Use with "filter:" */
+  --black-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
+  --black-png: invert(1);
+  --white-png: invert(0);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--base-color);
+  background: gray;
+}
+
+::selection {
+  color: var(--base-color);
+  background: gray;
+}
+
+a:hover {
+  cursor: var(--cursor-fg);
+}
 
 /* Fonts */
 @font-face {
@@ -224,7 +260,8 @@ div.wrapper {
 }
 
 div[id^="frame"] {
-  display: none;  
+  display: none;
+  color: var(--accent-color) !important;
 }
 
 .mouseovercontainer {
@@ -232,10 +269,15 @@ div[id^="frame"] {
   top: 0;
   width: 100%;
   height: 100%;
+  cursor: var(--cursor-fg);
 }
 
 span[id^="code"] {
-  color: var(--black-svg);
+  color: var(--accent-color) !important;
+}
+
+[id^="classification"] {
+  color: var(--accent-color);
 }
 
 img[id^="classification"] {
@@ -275,6 +317,7 @@ p.letters {
   font-family: 'Monospac821', normal;
   font-size: 16px;
   text-align: right;
+  color: var(--accent-color);
 }
 
 p.numbers {
@@ -325,7 +368,8 @@ p[id^="title"] {
 }
 
 .footer {
-  padding-top: 100px;
+  color: var(--accent-color);
+  padding-top: 20px;
   font-family:"SuisseIntl", normal;
   font-size: 14px;
 }
@@ -351,7 +395,7 @@ input.chk-btn {
   display: none;
 }
 input.chk-btn + label {
-  cursor: pointer;
+  cursor: var(--cursor-fg);
 }
 input.chk-btn:not(:checked) + label:hover {
   color: gray;
@@ -359,7 +403,7 @@ input.chk-btn:not(:checked) + label:hover {
 input.chk-btn + label:active,
 input.chk-btn:checked + label {
   text-decoration: underline;
-  cursor: pointer;
+  cursor: var(--cursor-fg);
 }
 
 input.chk-btn + label:active,
@@ -367,25 +411,26 @@ input.chk-btn:checked + label:hover {
   text-decoration: underline;
   color: gray;
 }
+span.filter-categories {color: var(--accent-color);}
 
-.filtered-inclusive .filter-item, .filtered-exclusive .filter-item, .filter-no-item { opacity: 10%; } /* filtered-inclusive/filtered-exclusive class applied via js */
-.filtered-inclusive .filter-item.selected, .filtered-exclusive .filter-item:not(.selected) { opacity: 100%; } /* selected class applied via js */ 
-.filter-no-item.filter-no-item-active { opacity: 100%; }
+.filtered-inclusive .filter-item, .filtered-exclusive .filter-item, .filter-no-item { opacity: 10%; cursor: var(--cursor-fg);} /* filtered-inclusive/filtered-exclusive class applied via js */
+.filtered-inclusive .filter-item.selected, .filtered-exclusive .filter-item:not(.selected) { opacity: 100%; cursor: var(--cursor-fg);} /* selected class applied via js */ 
+.filter-no-item.filter-no-item-active { opacity: 100%; cursor: var(--cursor-fg);}
 .filter-mask-active { position:absolute; top:0; left:0; bottom:0; right:0; -webkit-animation:filterMask 1s ease-in-out both; animation:filterMask 1s ease-in-out both }
 @-webkit-keyframes filterMask { 
-	0% { background:transparent } 
-	50% { background:#fff } 
-	100% { background:transparent } 
+	0% { background: transparent } 
+	50% { background: var(--base-color);} 
+	100% { background: transparent } 
 	}
 @keyframes filterMask { 
-	0% { background:transparent } 
-	50% { background:#fff } 
-	100% { background:transparent } 
+	0% { background: transparent } 
+	50% { background: var(--base-color);} 
+	100% { background: transparent } 
 	}
 
   .dropbtn {
     color: var(--accent-color);
-    cursor: pointer;
+    cursor: default;
   }
 
   .dropbtn:hover {
@@ -457,3 +502,49 @@ input.chk-btn:checked + label:hover {
     position: relative;
     top: calc(50% - 1em);
 }
+
+button {
+  padding: 3px;
+  margin: 0px;
+  border: 0px;
+  background-color: var(--base-color);
+  color: var(--accent-color);
+}
+
+button:hover {
+  color: gray;
+  cursor: var(--cursor-fg);
+}
+
+.darkmodebtn {
+  position: relative;
+  top: 2px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background-color: var(--base-color);
+  color: var(--accent-color)
+}
+
+.darkmodebtn:hover {
+  color: gray;
+}
+
+.sitetitle {
+  color: var(--accent-color);
+}
+
+.cursor {
+  cursor: var(--cursor-fg);
+}
+
+.linkmenu {
+  font-family: Monospac821, normal;
+  color: var(--accent-color);
+  font-size: 12px;
+}
+
+.linkmenu:hover {
+  color: gray;
+}
+
