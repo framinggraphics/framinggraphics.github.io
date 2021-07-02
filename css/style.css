@@ -268,7 +268,16 @@ div.wrapper2 {
  margin: 0;
 }
 
-.screencap2 {
+.screencap_h {
+  visibility: visible;
+  width: 95%;
+  max-height: calc(20.875vw * 0.5625);
+  display: flex;
+  opacity: 100%;
+  margin: 0;
+ }
+
+.screencap_v {
   visibility: visible;
   max-height: calc(20.875vw * 0.5625);
   display: flex;
