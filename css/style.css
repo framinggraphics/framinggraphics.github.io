@@ -623,6 +623,7 @@ button:hover {
   background-color: var(--base-color);
   font-family: 'SuisseIntl', normal;
   font-size: 16px;
+  color: var(--accent-color);
 }
 
 .formsubmit{
@@ -725,4 +726,25 @@ input:focus {
   background-color: black;
   z-index: 99;
   right: 0px;
+}
+
+.gridcontainer {
+  display: inline-block;
+  border: 0.5px solid var(--accent-color);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 30px);
+  grid-template-rows: repeat(2, 30px);
+}
+.cell {
+   /* center the cell content */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'SuisseIntl', normal;
+  font-size: 20px;
+  color: var(--accent-color);
+  background: var(--base-color);
+  border: 0.5px solid var(--accent-color);
 }
