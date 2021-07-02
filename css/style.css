@@ -754,3 +754,7 @@ input:focus {
   display: none;
   color: var(--accent-color)
 }
+
+.legend {
+  display: none;
+}
