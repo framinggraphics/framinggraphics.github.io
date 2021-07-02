@@ -734,8 +734,8 @@ input:focus {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 30px);
-  grid-template-rows: repeat(2, 30px);
+  grid-template-columns: repeat(5, 17px);
+  grid-template-rows: repeat(2, 17px);
 }
 .cell {
    /* center the cell content */
@@ -743,8 +743,14 @@ input:focus {
   align-items: center;
   display: flex;
   font-family: 'SuisseIntl', normal;
-  font-size: 20px;
+  font-size: 12px;
   color: var(--accent-color);
   background: var(--base-color);
   border: 0.5px solid var(--accent-color);
+  margin: -1px;
+}
+
+.leg {
+  display: none;
+  color: var(--accent-color)
 }
