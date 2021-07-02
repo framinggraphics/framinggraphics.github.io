@@ -20,10 +20,10 @@ Data - Framing graphics
 <!-- TOP SCRIPTS -->
 <script>
   function show(id) {
-    document.getElementById(id).style.display = "block";
+    document.getElementById(id).style.visibility = "visible";
   }
   function hide(id) {
-    document.getElementById(id).style.display = "none";
+    document.getElementById(id).style.visibility = "hidden";
   }
 
   function chwidth(width) {
@@ -501,53 +501,105 @@ Data - Framing graphics
       &nbsp;
     </div>
     <div class="fourcolumns">
-      <div class="infobg"><img src="/images/data/density/a.png" class="info1" onmouseover="this.src='/images/data/frequence/a.png'" onmouseout="this.src='/images/data/density/a.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/b.png" class="info1" onmouseover="this.src='/images/data/frequence/b.png'" onmouseout="this.src='/images/data/density/b.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/c.png" class="info1" onmouseover="this.src='/images/data/frequence/c.png'" onmouseout="this.src='/images/data/density/c.png'"/></div>
+      <div style="position: absolute; right: 5px; z-index: 99;">
+        <div id="lenghtA" class="lenght"><p class="timecode">2:06:01</p></div>
+        <div id="lenghtB" class="lenght"><p class="timecode">2:06:36</p></div>
+        <div id="lenghtC" class="lenght"><p class="timecode">2:30:39</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtD" class="lenght"><p class="timecode">2:13:09</p></div>
+        <div id="lenghtE" class="lenght"><p class="timecode">2:32:35</p></div>
+        <div id="lenghtF" class="lenght"><p class="timecode">1:55:12</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtG" class="lenght"><p class="timecode">1:55:23</p></div>
+        <div id="lenghtH" class="lenght"><p class="timecode">1:52:23</p></div>
+        <div id="lenghtI" class="lenght"><p class="timecode">1:39:54</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtJ" class="lenght"><p class="timecode">1:42:50</p></div>
+        <div id="lenghtK" class="lenght"><p class="timecode">2:01:02</p></div>
+        <div id="lenghtL" class="lenght"><p class="timecode">2:00:10</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtM" class="lenght"><p class="timecode">2:21:42</p></div>
+        <div id="lenghtN" class="lenght"><p class="timecode">3:48:17</p></div>
+        <div id="lenghtO" class="lenght"><p class="timecode">2:03:19</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtP" class="lenght"><p class="timecode">2:21:19</p></div>
+        <div id="lenghtQ" class="lenght"><p class="timecode">1:54:51</p></div>
+        <div id="lenghtR" class="lenght"><p class="timecode">2:46:35</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtS" class="lenght"><p class="timecode">1:53:36</p></div>
+        <div id="lenghtT" class="lenght"><p class="timecode">1:26:33</p></div>
+        <div id="lenghtU" class="lenght"><p class="timecode">1:34:17</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtV" class="lenght"><p class="timecode">1:53:19</p></div>
+        <div id="lenghtW" class="lenght"><p class="timecode">2:07:47</p></div>
+        <div id="lenghtX" class="lenght"><p class="timecode">1:56:22</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtY" class="lenght"><p class="timecode">1:56:00</p></div>
+        <div id="lenghtZ" class="lenght"><p class="timecode">1:57:30</p></div>
+        <div id="lenghtAA" class="lenght"><p class="timecode">1:38:56</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtAB" class="lenght"><p class="timecode">1:46:43</p></div>
+        <div id="lenghtAC" class="lenght"><p class="timecode">2:17:53</p></div>
+        <div id="lenghtAD" class="lenght"><p class="timecode">2:42:35</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtAE" class="lenght"><p class="timecode">2:25:38</p></div>
+        <div id="lenghtAF" class="lenght"><p class="timecode">2:32:49</p></div>
+        <div id="lenghtAG" class="lenght"><p class="timecode">2:32:52</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+        <div id="lenghtAH" class="lenght"><p class="timecode">2:13:18</p></div>
+        <div id="lenghtAI" class="lenght"><p class="timecode">2:29:33</p></div>
+        <div id="lenghtAJ" class="lenght"><p class="timecode">2:10:40</p></div>
+        <div class="lenght"><p class="timecode">&nbsp;</p></div>
+    </div>
+
+
+      <div class="infobg" onmouseover="show('lenghtA')" onmouseout="hide('lenghtA')"><img src="/images/data/density/a.png" class="info1" onmouseover="this.src='/images/data/frequence/a.png'" onmouseout="this.src='/images/data/density/a.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtB')" onmouseout="hide('lenghtB')"><img src="/images/data/density/b.png" class="info1" onmouseover="this.src='/images/data/frequence/b.png'" onmouseout="this.src='/images/data/density/b.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtC')" onmouseout="hide('lenghtC')"><img src="/images/data/density/c.png" class="info1" onmouseover="this.src='/images/data/frequence/c.png'" onmouseout="this.src='/images/data/density/c.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/d.png" class="info1" onmouseover="this.src='/images/data/frequence/d.png'" onmouseout="this.src='/images/data/density/d.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/e.png" class="info1" onmouseover="this.src='/images/data/frequence/e.png'" onmouseout="this.src='/images/data/density/e.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/f.png" class="info1" onmouseover="this.src='/images/data/frequence/f.png'" onmouseout="this.src='/images/data/density/f.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtD')" onmouseout="hide('lenghtD')"><img src="/images/data/density/d.png" class="info1" onmouseover="this.src='/images/data/frequence/d.png'" onmouseout="this.src='/images/data/density/d.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtE')" onmouseout="hide('lenghtE')"><img src="/images/data/density/e.png" class="info1" onmouseover="this.src='/images/data/frequence/e.png'" onmouseout="this.src='/images/data/density/e.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtF')" onmouseout="hide('lenghtF')"><img src="/images/data/density/f.png" class="info1" onmouseover="this.src='/images/data/frequence/f.png'" onmouseout="this.src='/images/data/density/f.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/g.png" class="info1" onmouseover="this.src='/images/data/frequence/g.png'" onmouseout="this.src='/images/data/density/g.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/h.png" class="info1" onmouseover="this.src='/images/data/frequence/h.png'" onmouseout="this.src='/images/data/density/h.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/i.png" class="info1" onmouseover="this.src='/images/data/frequence/i.png'" onmouseout="this.src='/images/data/density/i.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtG')" onmouseout="hide('lenghtG')"><img src="/images/data/density/g.png" class="info1" onmouseover="this.src='/images/data/frequence/g.png'" onmouseout="this.src='/images/data/density/g.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtH')" onmouseout="hide('lenghtH')"><img src="/images/data/density/h.png" class="info1" onmouseover="this.src='/images/data/frequence/h.png'" onmouseout="this.src='/images/data/density/h.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtI')" onmouseout="hide('lenghtI')"><img src="/images/data/density/i.png" class="info1" onmouseover="this.src='/images/data/frequence/i.png'" onmouseout="this.src='/images/data/density/i.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/j.png" class="info1" onmouseover="this.src='/images/data/frequence/j.png'" onmouseout="this.src='/images/data/density/j.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/k.png" class="info1" onmouseover="this.src='/images/data/frequence/k.png'" onmouseout="this.src='/images/data/density/k.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/l.png" class="info1"/></div>
+      <div class="infobg" onmouseover="show('lenghtJ')" onmouseout="hide('lenghtJ')"><img src="/images/data/density/j.png" class="info1" onmouseover="this.src='/images/data/frequence/j.png'" onmouseout="this.src='/images/data/density/j.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtK')" onmouseout="hide('lenghtK')"><img src="/images/data/density/k.png" class="info1" onmouseover="this.src='/images/data/frequence/k.png'" onmouseout="this.src='/images/data/density/k.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtL')" onmouseout="hide('lenghtL')"><img src="/images/data/density/l.png" class="info1"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/m.png" class="info1" onmouseover="this.src='/images/data/frequence/m.png'" onmouseout="this.src='/images/data/density/m.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/n.png" class="info1" onmouseover="this.src='/images/data/frequence/n.png'" onmouseout="this.src='/images/data/density/n.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/o.png" class="info1" onmouseover="this.src='/images/data/frequence/o.png'" onmouseout="this.src='/images/data/density/o.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtM')" onmouseout="hide('lenghtM')"><img src="/images/data/density/m.png" class="info1" onmouseover="this.src='/images/data/frequence/m.png'" onmouseout="this.src='/images/data/density/m.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtN')" onmouseout="hide('lenghtN')"><img src="/images/data/density/n.png" class="info1" onmouseover="this.src='/images/data/frequence/n.png'" onmouseout="this.src='/images/data/density/n.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtO')" onmouseout="hide('lenghtO')"><img src="/images/data/density/o.png" class="info1" onmouseover="this.src='/images/data/frequence/o.png'" onmouseout="this.src='/images/data/density/o.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/p.png" class="info1" onmouseover="this.src='/images/data/frequence/p.png'" onmouseout="this.src='/images/data/density/p.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/q.png" class="info1" onmouseover="this.src='/images/data/frequence/q.png'" onmouseout="this.src='/images/data/density/q.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/r.png" class="info1" onmouseover="this.src='/images/data/frequence/r.png'" onmouseout="this.src='/images/data/density/r.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtP')" onmouseout="hide('lenghtP')"><img src="/images/data/density/p.png" class="info1" onmouseover="this.src='/images/data/frequence/p.png'" onmouseout="this.src='/images/data/density/p.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtQ')" onmouseout="hide('lenghtQ')"><img src="/images/data/density/q.png" class="info1" onmouseover="this.src='/images/data/frequence/q.png'" onmouseout="this.src='/images/data/density/q.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtR')" onmouseout="hide('lenghtR')"><img src="/images/data/density/r.png" class="info1" onmouseover="this.src='/images/data/frequence/r.png'" onmouseout="this.src='/images/data/density/r.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/s.png" class="info1" onmouseover="this.src='/images/data/frequence/s.png'" onmouseout="this.src='/images/data/density/s.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/t.png" class="info1" onmouseover="this.src='/images/data/frequence/t.png'" onmouseout="this.src='/images/data/density/t.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/u.png" class="info1" onmouseover="this.src='/images/data/frequence/u.png'" onmouseout="this.src='/images/data/density/u.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtS')" onmouseout="hide('lenghtS')"><img src="/images/data/density/s.png" class="info1" onmouseover="this.src='/images/data/frequence/s.png'" onmouseout="this.src='/images/data/density/s.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtT')" onmouseout="hide('lenghtT')"><img src="/images/data/density/t.png" class="info1" onmouseover="this.src='/images/data/frequence/t.png'" onmouseout="this.src='/images/data/density/t.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtU')" onmouseout="hide('lenghtU')"><img src="/images/data/density/u.png" class="info1" onmouseover="this.src='/images/data/frequence/u.png'" onmouseout="this.src='/images/data/density/u.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/v.png" class="info1" onmouseover="this.src='/images/data/frequence/v.png'" onmouseout="this.src='/images/data/density/v.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/w.png" class="info1" onmouseover="this.src='/images/data/frequence/w.png'" onmouseout="this.src='/images/data/density/w.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/x.png" class="info1" onmouseover="this.src='/images/data/frequence/x.png'" onmouseout="this.src='/images/data/density/x.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtV')" onmouseout="hide('lenghtV')"><img src="/images/data/density/v.png" class="info1" onmouseover="this.src='/images/data/frequence/v.png'" onmouseout="this.src='/images/data/density/v.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtW')" onmouseout="hide('lenghtW')"><img src="/images/data/density/w.png" class="info1" onmouseover="this.src='/images/data/frequence/w.png'" onmouseout="this.src='/images/data/density/w.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtX')" onmouseout="hide('lenghtX')"><img src="/images/data/density/x.png" class="info1" onmouseover="this.src='/images/data/frequence/x.png'" onmouseout="this.src='/images/data/density/x.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/y.png" class="info1" onmouseover="this.src='/images/data/frequence/y.png'" onmouseout="this.src='/images/data/density/y.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/z.png" class="info1" onmouseover="this.src='/images/data/frequence/z.png'" onmouseout="this.src='/images/data/density/z.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/aa.png" class="info1" onmouseover="this.src='/images/data/frequence/aa.png'" onmouseout="this.src='/images/data/density/aa.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtY')" onmouseout="hide('lenghtY')"><img src="/images/data/density/y.png" class="info1" onmouseover="this.src='/images/data/frequence/y.png'" onmouseout="this.src='/images/data/density/y.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtZ')" onmouseout="hide('lenghtZ')"><img src="/images/data/density/z.png" class="info1" onmouseover="this.src='/images/data/frequence/z.png'" onmouseout="this.src='/images/data/density/z.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAA')" onmouseout="hide('lenghtAA')"><img src="/images/data/density/aa.png" class="info1" onmouseover="this.src='/images/data/frequence/aa.png'" onmouseout="this.src='/images/data/density/aa.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/ab.png" class="info1" onmouseover="this.src='/images/data/frequence/ab.png'" onmouseout="this.src='/images/data/density/ab.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/ac.png" class="info1" onmouseover="this.src='/images/data/frequence/ac.png'" onmouseout="this.src='/images/data/density/ac.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/ad.png" class="info1" onmouseover="this.src='/images/data/frequence/ad.png'" onmouseout="this.src='/images/data/density/ad.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAB')" onmouseout="hide('lenghtAB')"><img src="/images/data/density/ab.png" class="info1" onmouseover="this.src='/images/data/frequence/ab.png'" onmouseout="this.src='/images/data/density/ab.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAC')" onmouseout="hide('lenghtAC')"><img src="/images/data/density/ac.png" class="info1" onmouseover="this.src='/images/data/frequence/ac.png'" onmouseout="this.src='/images/data/density/ac.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAD')" onmouseout="hide('lenghtAD')"><img src="/images/data/density/ad.png" class="info1" onmouseover="this.src='/images/data/frequence/ad.png'" onmouseout="this.src='/images/data/density/ad.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/ae.png" class="info1" onmouseover="this.src='/images/data/frequence/ae.png'" onmouseout="this.src='/images/data/density/ae.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/af.png" class="info1" onmouseover="this.src='/images/data/frequence/af.png'" onmouseout="this.src='/images/data/density/af.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/ag.png" class="info1" onmouseover="this.src='/images/data/frequence/ag.png'" onmouseout="this.src='/images/data/density/ag.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAE')" onmouseout="hide('lenghtAE')"><img src="/images/data/density/ae.png" class="info1" onmouseover="this.src='/images/data/frequence/ae.png'" onmouseout="this.src='/images/data/density/ae.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAF')" onmouseout="hide('lenghtAF')"><img src="/images/data/density/af.png" class="info1" onmouseover="this.src='/images/data/frequence/af.png'" onmouseout="this.src='/images/data/density/af.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAG')" onmouseout="hide('lenghtAG')"><img src="/images/data/density/ag.png" class="info1" onmouseover="this.src='/images/data/frequence/ag.png'" onmouseout="this.src='/images/data/density/ag.png'"/></div>
       <div style="height:22px;"></div>
-      <div class="infobg"><img src="/images/data/density/ah.png" class="info1" onmouseover="this.src='/images/data/frequence/ah.png'" onmouseout="this.src='/images/data/density/ah.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/ai.png" class="info1" onmouseover="this.src='/images/data/frequence/ai.png'" onmouseout="this.src='/images/data/density/ai.png'"/></div>
-      <div class="infobg"><img src="/images/data/density/aj.png" class="info1" onmouseover="this.src='/images/data/frequence/aj.png'" onmouseout="this.src='/images/data/density/aj.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAH')" onmouseout="hide('lenghtAH')"><img src="/images/data/density/ah.png" class="info1" onmouseover="this.src='/images/data/frequence/ah.png'" onmouseout="this.src='/images/data/density/ah.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAI')" onmouseout="hide('lenghtAI')"><img src="/images/data/density/ai.png" class="info1" onmouseover="this.src='/images/data/frequence/ai.png'" onmouseout="this.src='/images/data/density/ai.png'"/></div>
+      <div class="infobg" onmouseover="show('lenghtAJ')" onmouseout="hide('lenghtAJ')"><img src="/images/data/density/aj.png" class="info1" onmouseover="this.src='/images/data/frequence/aj.png'" onmouseout="this.src='/images/data/density/aj.png'"/></div>
      </div>
 </div>
 <div class="row" style="padding-top: 20px;">
