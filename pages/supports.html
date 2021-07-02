@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/style.css"/>
-  <link rel="stylesheet" href="/css/lightbox.css"/>
-  <link rel="stylesheet" href="/css/magnify.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="/js/jquery.magnify.js"></script>
-  <script src="/js/jquery.magnify-mobile.js"></script>
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="description" lang="en" content="Team of the project"/>
-<title>
-Team - Framing graphics
+<meta name="description" lang="en" content="Supports of graphic elements"/>
+<title>     
+Supports of graphic elements - Framing graphics
 </title>  
 <link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon">
 <script>
@@ -22,19 +17,22 @@ Team - Framing graphics
 </head>
 <body>
 
+<!-- TOP SCRIPTS -->
 <script>
-    function chwidth(width) {
-    document.getElementById('navbar').style.width = width;
-    }
-    $(document).ready(function() {
-      $('.zoom').magnify({
-        magnifiedWidth: 1200,
-        magnifiedHeight: 1200,
-    });
-    });
-</script>
+  function chwidth(width) {
+  document.getElementById('navbar').style.width = width;
+  }
+  
+  //Get the button:
+  mybutton = document.getElementById("topbtn");
 
-<div class="footerwrapper">
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<!-- END OF SCRIPTS -->
 
 <!-- MENU -->
 <div id="menu">
@@ -44,7 +42,7 @@ Team - Framing graphics
     &nbsp;
   </div>
   <div class="column">
-    <span class="sitetitle">Framing graphics</span> <span class="movietitle">Team</span>
+    <span class="sitetitle">Framing graphics</span> <span class="movietitle">Supports of graphic elements</span>
   </div>
   <div class="column">
     <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">Resources</span>
@@ -489,73 +487,83 @@ Team - Framing graphics
 </div>
 <!-- END OF STICKY LETTERS -->
 
-
-<!-- CONTENT -->
+<!-- CONTENT-->
 <div id="topblock"></div>
-<div class="row team">
+<div class="row" style="color: var(--accent-color)">
     <div class="numbercolumn">
       &nbsp;
     </div>
-    <div class="twocolumns">
-
-      <span>Meet Claudia, Francesco & Matteo</span>
-     
+    <div class="column">
+      <span>Supports of graphic elements</span><br><br>
+      <img src="/images/res/picto2.svg" width="50px" class="svg"/>
      </div>
     <div class="column">
-
     </div>
     <div class="column">
-  
     </div>
-    
+    <div class="column">
+    </div>
+  </div>
+
 </div>
-<div class="row" style="padding-top: 30px;">
+
+<div class="row" style="padding-top:40px; color: var(--accent-color)">
   <div class="numbercolumn">
     &nbsp;
   </div>
-  <div class="fourcolumns">
-
-    <img src="/images/team/cla.png" width="200px" class="zoom" data-magnify-src="/images/team/cla.png">
-    <img src="/images/team/fra.png" width="200px" class="zoom" data-magnify-src="/images/team/fra.png">
-    <img src="/images/team/mat.png" width="200px" class="zoom" data-magnify-src="/images/team/mat.png">
-  
+  <div class="column">
+    <span>Application</span>
    </div>
   <div class="column">
-  </div>  
+  <span>Digital</span>
+  </div>
+  <div class="column">
+    <span>Post production</span>
+  </div>
+  <div class="column">
+    <spa>Print</spa>
+  </div>
 </div>
-<div class="row team" style="padding-top:30px;">
+
+<div class="row" style="color: var(--accent-color)">
   <div class="numbercolumn">
     &nbsp;
   </div>
-  <div class="fourcolumns">
-    <span>We are a team of students with a thing for data, codes and movies.</span>
-   </div>
+  <div class="column">
+    <span><p>The graphics are considered applied when its design foresees and results in an affixing on other props and therefore must take into account the finish and production of the object, the support material that will have to host the graphics and the fact that representation techniques other than ordinary printing, such as make-up, modeling, sewing, 3D printing or painting.</p><br>
       
-</div>
-<div class="row" style="padding-top: 30px;">
-  <div class="numbercolumn">
-    &nbsp;
-  </div>
-  <div class="threecolumns">
-    <a href="/pdf/Framing graphics.pdf" download class="downloadproject"><img src="/images/res/arrowdown.svg" class="arrow" width="20px" style="margin-bottom: -5px;"/> Download the project</a>
+      </span>
    
    </div>
   <div class="column">
+    <span><p>A graphic can be reproduced within a film through digital means. By digital we mean all those cases in which it is a display within the film that shows the graphic element. Video walls, televisions, computer screens, telephones or any output that reproduces a static or moving image are to be considered digital media.</p>
 
+</div>
+<div class="column">
+  <span>We are talking about post-production when the graphic element is applied to the video, during the editing of the film itself.
+    This is the case of interfaces that denote the point of view of a machine, a camera or a viewer. It all started with the red dot of the superimposed recording, the famous “rec”. Other cases are special graphic effects through which concepts, sensations, spells or noises are expressed as in the case of Scott Pilgrim, in which the style of comics is rendered through onomatopoeias.</span>
+
+</div>
+  <div class="column">
+    <span>The most classic type of support, the most traditional of the graphic designer’s profession. By print support we mean everything that is produced on paper: Posters, brochures, books, flyers, newspapers are the basis of the work required of a designer in the film industry.</span>
+     </div>
   </div>
+
+</div>
+
 </div>
 <!-- END OF CONTENT -->
 
-<div style="height:10vh;"></div>
-
 <!-- FOOTER -->
-<div class="row footer" id="footer">
+<div class="row footer fixedfooter" id="footer">
   <div class="numbercolumn">
     &nbsp;
   </div>
   <div class="column">
     <span>Framing graphics</span>
    <img src="/images/res/logo.svg" height="13px" width="13px" class="logo">
+
+  
    </div>
   <div class="column">
     <p>Last updated July 5th 2021</p>
@@ -564,7 +572,7 @@ Team - Framing graphics
     &nbsp;
   </div>
   <div class="column">
-  <!-- <button id="topbtn" onclick="topFunction()" title="Go to top"><img src="/images/res/arrowup.svg" class="arrow" width="20px" height="20px"></button> -->
+  <button id="topbtn" onclick="topFunction()" title="Go to top"><img src="/images/res/arrowup.svg" class="arrow" width="20px" height="20px"></button>
   </div>
 </div>
 <!-- END OF FOOTER -->

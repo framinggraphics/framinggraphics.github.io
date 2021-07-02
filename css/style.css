@@ -6,7 +6,8 @@
     --white-svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(191deg) brightness(108%) contrast(101%); /* Use with "filter:" */
     --black-png: invert(1);
     --white-png: invert(0);
-    --cursor-fg: url('/images/res/cursor.png') 10 5, auto;
+    /* --cursor-fg: url('/images/res/cursor.png') 10 5, auto; */
+    --cursor-fg: pointer;
   }
 /* Make use of the variables like color: var(--base-color); */
 

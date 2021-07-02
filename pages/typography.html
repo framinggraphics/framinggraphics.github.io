@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/style.css"/>
-  <link rel="stylesheet" href="/css/lightbox.css"/>
-  <link rel="stylesheet" href="/css/magnify.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="/js/jquery.magnify.js"></script>
-  <script src="/js/jquery.magnify-mobile.js"></script>
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="description" lang="en" content="Team of the project"/>
-<title>
-Team - Framing graphics
+<meta name="description" lang="en" content="Typography of graphic elements"/>
+<title>     
+  Typography of graphic elements - Framing graphics
 </title>  
 <link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon">
 <script>
@@ -22,19 +17,22 @@ Team - Framing graphics
 </head>
 <body>
 
+<!-- TOP SCRIPTS -->
 <script>
-    function chwidth(width) {
-    document.getElementById('navbar').style.width = width;
-    }
-    $(document).ready(function() {
-      $('.zoom').magnify({
-        magnifiedWidth: 1200,
-        magnifiedHeight: 1200,
-    });
-    });
-</script>
+  function chwidth(width) {
+  document.getElementById('navbar').style.width = width;
+  }
+  
+  //Get the button:
+  mybutton = document.getElementById("topbtn");
 
-<div class="footerwrapper">
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<!-- END OF SCRIPTS -->
 
 <!-- MENU -->
 <div id="menu">
@@ -44,7 +42,7 @@ Team - Framing graphics
     &nbsp;
   </div>
   <div class="column">
-    <span class="sitetitle">Framing graphics</span> <span class="movietitle">Team</span>
+    <span class="sitetitle">Framing graphics</span> <span class="movietitle">Tipography of graphic elements</span>
   </div>
   <div class="column">
     <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">Resources</span>
@@ -489,60 +487,173 @@ Team - Framing graphics
 </div>
 <!-- END OF STICKY LETTERS -->
 
-
-<!-- CONTENT -->
+<!-- CONTENT-->
 <div id="topblock"></div>
-<div class="row team">
+<div class="row" style="color: var(--accent-color)">
     <div class="numbercolumn">
       &nbsp;
     </div>
-    <div class="twocolumns">
-
-      <span>Meet Claudia, Francesco & Matteo</span>
-     
+    <div class="column">
+      <span>Typographical classification by Aldo Novarese, 1957</span><br><br>
+      <img src="/images/res/picto3.svg" width="50px" class="svg"/>
      </div>
     <div class="column">
-
     </div>
     <div class="column">
-  
     </div>
-    
-</div>
-<div class="row" style="padding-top: 30px;">
-  <div class="numbercolumn">
-    &nbsp;
+    <div class="column">
+    </div>
   </div>
-  <div class="fourcolumns">
 
-    <img src="/images/team/cla.png" width="200px" class="zoom" data-magnify-src="/images/team/cla.png">
-    <img src="/images/team/fra.png" width="200px" class="zoom" data-magnify-src="/images/team/fra.png">
-    <img src="/images/team/mat.png" width="200px" class="zoom" data-magnify-src="/images/team/mat.png">
-  
-   </div>
+</div>
+
+<div class="row" style="padding-top:20px; color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
   <div class="column">
-  </div>  
-</div>
-<div class="row team" style="padding-top:30px;">
-  <div class="numbercolumn">
-    &nbsp;
-  </div>
-  <div class="fourcolumns">
-    <span>We are a team of students with a thing for data, codes and movies.</span>
-   </div>
+    <span><p>The diversity of the shapes of the characters affects the aesthetics, the legibility of the text and in the case of cinema in the connotation of a style that defines a context of belonging to a film. There are thousands of different fonts with the most disparate shapes, to recognize them several attempts have been made to classify them. Among these, one of the most accredited and recognized is that of Aldo Novarese, here taken as a system for assigning a class to the characters present in the films analyzed.
+
+      According to the Novarese classification, all the characters can be divided into 10 families assigned on the basis of the historical characterization and the design of their rods and their terminal section.</p><br>
       
-</div>
-<div class="row" style="padding-top: 30px;">
-  <div class="numbercolumn">
-    &nbsp;
-  </div>
-  <div class="threecolumns">
-    <a href="/pdf/Framing graphics.pdf" download class="downloadproject"><img src="/images/res/arrowdown.svg" class="arrow" width="20px" style="margin-bottom: -5px;"/> Download the project</a>
+      </span>
    
    </div>
   <div class="column">
+</div>
+<div class="column">
 
+</div>
+  <div class="column">
+     </div>
   </div>
+
+</div>
+
+<div class="row" style="padding-top:40px; color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span>Bodonian</span>
+   </div>
+  <div class="column">
+  <span>Fantasy</span>
+  </div>
+  <div class="column">
+    <span>Slab</span>
+  </div>
+  <div class="column">
+    <spa>Lapidary</spa>
+  </div>
+</div>
+
+<div class="row" style="color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span><p>They have an exaggerated thickness ratio between very thin rods and thick rods. The graces join with the vertical shaft of the letter forming an obvious right angle.</p><br>
+      
+      </span>
+   
+   </div>
+  <div class="column">
+    <span><p>The category “Fantasy” includes all those characters that do not fall within the other classifications and that have been invented without any constructive rule. They are often characterized by a great deal of detail and are used only in capital letters as they are difficult to read.</p>
+
+</div>
+<div class="column">
+  <span>They are recognizable by the very accentuated and thick graces, and at right angles.</span>
+
+</div>
+  <div class="column">
+    <span>They refer to the ancient Roman characters, when they were used for epigraphs and for inscriptions on monuments. They have triangular graces that form an acute angle with the base line, typical of chisel carvings on stone.</span>
+     </div>
+  </div>
+
+</div>
+
+<div class="row" style="padding-top:40px; color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span>Linear</span>
+   </div>
+  <div class="column">
+  <span>Medieval</span>
+  </div>
+  <div class="column">
+    <span>Ornate</span>
+  </div>
+  <div class="column">
+    <spa>Script</spa>
+  </div>
+</div>
+
+<div class="row" style="color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span><p>Also called sticks. They are the most modern fonts, without graces and mostly uniform thicknesses of the temples.</p><br>
+      </span>
+   
+   </div>
+  <div class="column">
+    <span><p>Also called gothic. They were the typical characters of the Gutenberg period, but today difficult to read. They have elongated ends characterized by accentuated angles. The graces are defined as “spear point pointing down” and are the result of the use of the calligraphic nib with a flat tip and positioned at 45 degrees.</p>
+
+</div>
+<div class="column">
+  <span>The Ornates are also called scribes. They are those characters that have very accentuated decorations and shading, have flourishes, human and floral figures and are hard to read. They are usually used as drop caps.</span>
+
+</div>
+  <div class="column">
+    <span>Also called calligraphic. They imitate handwriting. They therefore assume very heterogeneous characteristics in relation to the type of writing instrument that is imitated.</span>
+     </div>
+
+</div>
+
+
+<div class="row" style="padding-top:40px; color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span>Transitional</span>
+   </div>
+  <div class="column">
+  <span>Venetian</span>
+  </div>
+  <div class="column">
+  </div>
+  <div class="column">
+  </div>
+</div>
+
+<div class="row" style="color: var(--accent-color)">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span><p>So called because they indicate the transition between the Ancient Roman and the Modern Roman, and were born around the 1700s. The rods almost never have an inclination, they have horizontal and thin graces, they end with a rod whose base has a linear course.</p><br>
+      </span>
+   
+   </div>
+  <div class="column">
+    <span><p>They derive from ancient Roman characters, such as the Lapidaries, but differ from these for the rounded end of the graces, the more contrasting lines and the slightly concave foot of the shaft. They spread around the second half of the 15th century in Venice, home of the first Italian printers.</p>
+
+</div>
+
+<div class="column">
+</div>
+  
+<div class="column">
+     </div>
+
+</div>
+
+
 </div>
 <!-- END OF CONTENT -->
 
@@ -556,6 +667,8 @@ Team - Framing graphics
   <div class="column">
     <span>Framing graphics</span>
    <img src="/images/res/logo.svg" height="13px" width="13px" class="logo">
+
+  
    </div>
   <div class="column">
     <p>Last updated July 5th 2021</p>
@@ -564,7 +677,7 @@ Team - Framing graphics
     &nbsp;
   </div>
   <div class="column">
-  <!-- <button id="topbtn" onclick="topFunction()" title="Go to top"><img src="/images/res/arrowup.svg" class="arrow" width="20px" height="20px"></button> -->
+  <button id="topbtn" onclick="topFunction()" title="Go to top"><img src="/images/res/arrowup.svg" class="arrow" width="20px" height="20px"></button>
   </div>
 </div>
 <!-- END OF FOOTER -->

@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/magnify.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/jquery.magnify.js"></script>
+<script src="/js/jquery.magnify-mobile.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="description" lang="en" content="Project description"/>
@@ -31,6 +35,13 @@ Project - Framing graphics
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  $(document).ready(function() {
+      $('.zoom').magnify({
+        magnifiedWidth: 1800,
+        magnifiedHeight: 1800,
+    });
+    });
 </script>
 <!-- END OF SCRIPTS -->
 
@@ -574,7 +585,7 @@ Project - Framing graphics
     </div>
     <div class="twocolumns">
   
-      <span><img src="/images/project/03.png" width="100%"></span>
+      <span><img src="/images/project/03.png" width="100%" class="zoom" data-magnify-src="/images/project/03.png"></span>
     
      </div>
     <div class="column">
