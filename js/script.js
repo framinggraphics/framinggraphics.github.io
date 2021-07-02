@@ -749,15 +749,6 @@ $(window).scroll(function() {
         }
     }
 
-    function showlegend() {
-        var x = document.getElementById("legend");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      } 
-
 UncheckAll();
 createclasses();
 creategallery();
