@@ -683,3 +683,7 @@ button:hover {
 input:focus {
   outline:none;
 }
+
+.downloadproject:hover {
+  filter: invert(0.5);
+}
