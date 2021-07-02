@@ -679,7 +679,7 @@ function createclassification() {
         var div = document.createElement("div");
         div.setAttribute("id","classification" + i % classification.length);
         div.setAttribute("class","classification");
-        div.innerHTML = '<img src=' + classification[i % classification.length] + ' id="classification' + i % classification.length + '"/>';
+        div.innerHTML = '<img class="svg" src=' + classification[i % classification.length] + ' id="classification' + i % classification.length + '"/>';
         classcontainer.appendChild(div);
     }
 }

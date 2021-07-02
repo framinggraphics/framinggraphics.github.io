@@ -425,7 +425,7 @@ p[id^="title"] {
 }
 
 .data {
-  visibility: hidden;
+  display: none;
 }
 
 a {
@@ -434,7 +434,6 @@ a {
 
 .classification {
   display: none;
-  filter: var(--black-svg);
 }
 
 .logo {
@@ -687,4 +686,7 @@ input:focus {
 
 .downloadproject:hover {
   filter: invert(0.5);
+}
+
+
 }
