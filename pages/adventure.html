@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href="/css/lightbox.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="description" lang="en" content="Adventure genere"/>
+<title>
+Adventure - Framing graphics
+</title>
+<link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon"> 
+<script>
+  const colorScheme = localStorage.getItem("color-scheme") || "light-mode";
+</script>
+</head>
+<body>
+<!-- TOP SCRIPTS -->
+<script>
+    function show(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function hide(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    function chwidth(width) {
+    document.getElementById('navbar').style.width = width;
+    }
+    
+    //Get the button:
+    mybutton = document.getElementById("topbtn");
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+<!-- END OF SCRIPTS -->
+
+
+<!-- MENU -->
+<div id="menu">
+  <div style="float: left;"><a href="/index.html"><img src="/images/res/logo.svg" height="25px" width="25px" style="padding-top: 5px; margin-left: 0px; margin-top: -2px;" class="logo"></a></div>
+  <div class="row">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span class="sitetitle">Framing graphics</span> <span class="movietitle">Adventure</span>
+  </div>
+  <div class="column">
+    <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">Resources</span>
+    <div class="dropdown-content">
+      <span style="line-height: 25px;">&nbsp;</span><br>
+      <a href="/pages/data.html">Data</a><br>
+      <a href="/pages/submit.html">Submit your film</a>
+    </div>
+    </div>
+    <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">About us</span>
+      <div class="dropdown-content">
+        <span style="line-height: 25px;">&nbsp;</span><br>
+        <a href="/pages/project.html">Project</a><br>
+        <a href="/pages/team.html">Team</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    &nbsp;
+  </div>
+  <div class="column">
+    <button class="darkmodebtn" style="font-size: 20px;">●</button>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/claudia-nazionale" target="_blank"><span class="linkmenu">c</span></a>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/franckfalcone" target="_blank"><span class="linkmenu">f</span></a>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/matteo-mastromoro" target="_blank"><span class="linkmenu">m</span></a>
+  </div>
+</div>
+</div>
+<!-- END OF MENU -->
+
+<!-- FILTERS -->
+<div id="topblock">
+</div>
+<!--END OF FILTERS -->
+
+<!-- NAVBAR -->
+<div id="navbar" class="hidescrollbar">
+  <!-- <a href="/index.html"><img src="/images/res/logo.svg" height="25px" width="25px" style="padding-top: 5px; margin-left: -2px;" class="logo"></a> -->
+    <div style="height: 30px;"></div>
+    <a href="/pages/adventure.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span></span>
+      </div>
+      <div class="filmtitle" id="Adventure">
+        <span>Adventure</span>
+      </div>
+    </div></a>
+    <a href="/pages/A.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>A</span>
+    </div>
+    <div class="filmtitle" id="A">
+      <span class="scrollingtext">A - Iron Man</span>
+    </div>
+  </div></a>
+  <a href="/pages/B.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>B</span>
+    </div>
+    <div class="filmtitle" id="B">
+      <span class="scrollingtext">B - Jurassic Park</span>
+    </div>
+  </div></a>
+  <a href="/pages/C.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>C</span>
+    </div>
+    <div class="filmtitle" id="C">
+      <span class="scrollingtext">C - Pirates of the Caribbean: Dead Man’s Chest</span>
+    </div>
+  </div></a>
+  <a href="/pages/biography.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Biography">
+      <span>Biography</span>
+    </div>
+  </div></a>
+  <a href="/pages/D.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>D</span>
+    </div>
+    <div class="filmtitle" id="D">
+      <span class="scrollingtext">D - All the Money in the World</span>
+    </div>
+  </div></a>
+  <a href="/pages/E.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>E</span>
+    </div>
+    <div class="filmtitle" id="E">
+      <span class="scrollingtext">E - Ford v Ferrari</span>
+    </div>
+  </div></a>
+  <a href="/pages/F.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>F</span>
+    </div>
+    <div class="filmtitle" id="F">
+      <span class="scrollingtext">F - The Founder</span>
+    </div>
+  </div></a>
+  <a href="/pages/comedy.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Comedy">
+      <span>Comedy</span>
+    </div>
+  </div></a>
+  <a href="/pages/G.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>G</span>
+    </div>
+    <div class="filmtitle" id="G">
+      <span class="scrollingtext">G - Charlie and the Chocolate Factory</span>
+    </div>
+  </div></a>
+  <a href="/pages/H.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>H</span>
+    </div>
+    <div class="filmtitle" id="H">
+      <span class="scrollingtext">H - Scott Pilgrim vs. the World</span>
+    </div>
+  </div></a>
+  <a href="/pages/I.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>I</span>
+    </div>
+    <div class="filmtitle" id="I">
+      <span class="scrollingtext">I - The Grand Budapest Hotel</span>
+    </div>
+  </div></a>
+  <a href="/pages/drama.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Drama">
+      <span>Drama</span>
+    </div>
+  </div></a>
+  <a href="/pages/J.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>J</span>
+    </div>
+    <div class="filmtitle" id="J">
+      <span class="scrollingtext">J - Dogman</span>
+    </div>
+  </div></a>
+  <a href="/pages/K.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>K</span>
+    </div>
+    <div class="filmtitle" id="K">
+      <span class="scrollingtext">K - Her</span>
+    </div>
+  </div></a>
+  <a href="/pages/L.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>L</span>
+    </div>
+    <div class="filmtitle" id="L">
+      <span class="scrollingtext">L - William Shakespeare’s Romeo + Juliet</span>
+    </div>
+  </div></a>
+  <a href="/pages/fantasy.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Fantasy">
+      <span>Fantasy</span>
+    </div>
+  </div></a>
+  <a href="/pages/M.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>M</span>
+    </div>
+    <div class="filmtitle" id="M">
+      <span class="scrollingtext">M - Harry Potter and the Prisoner of Azkaban</span>
+    </div>
+  </div></a>
+  <a href="/pages/N.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>N</span>
+    </div>
+    <div class="filmtitle" id="N">
+      <span class="scrollingtext">N - The Lord of the Rings: The Fellowship of the Ring</span>
+    </div>
+  </div></a>
+  <a href="/pages/O.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>O</span>
+    </div>
+    <div class="filmtitle" id="O">
+      <span class="scrollingtext">O - The Shape of Water</span>
+    </div>
+  </div></a>
+  <a href="/pages/history.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="History">
+      <span>History</span>
+    </div>
+  </div></a>
+  <a href="/pages/P.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>P</span>
+    </div>
+    <div class="filmtitle" id="P">
+      <span class="scrollingtext">P - Bridge of Spies</span>
+    </div>
+  </div></a>
+  <a href="/pages/Q.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>Q</span>
+    </div>
+    <div class="filmtitle" id="Q">
+      <span class="scrollingtext">Q - Elizabeth: The Golden Age</span>
+    </div>
+  </div></a>
+  <a href="/pages/R.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>R</span>
+    </div>
+    <div class="filmtitle" id="R">
+      <span class="scrollingtext">R - Gangs of New York</span>
+    </div>
+  </div></a>
+  <a href="/pages/horror.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Horror">
+      <span>Horror</span>
+    </div>
+  </div></a>
+  <a href="/pages/S.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>S</span>
+    </div>
+    <div class="filmtitle" id="S">
+      <span class="scrollingtext">S - Death Proof</span>
+    </div>
+  </div></a>
+  <a href="/pages/T.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>T</span>
+    </div>
+    <div class="filmtitle" id="T">
+      <span class="scrollingtext">T - The Stuff</span>
+    </div>
+  </div></a>
+  <a href="/pages/U.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>U</span>
+    </div>
+    <div class="filmtitle" id="U">
+      <span class="scrollingtext">U - They Live</span>
+    </div>
+  </div></a>
+  <a href="/pages/musical.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Musical">
+      <span>Musical</span>
+    </div>
+  </div></a>
+  <a href="/pages/V.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>V</span>
+    </div>
+    <div class="filmtitle" id="V">
+      <span class="scrollingtext">V - Chicago</span>
+    </div>
+  </div></a>
+  <a href="/pages/W.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>W</span>
+    </div>
+    <div class="filmtitle" id="W">
+      <span class="scrollingtext">W - Moulin Rouge!</span>
+    </div>
+  </div></a>
+  <a href="/pages/X.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>X</span>
+    </div>
+    <div class="filmtitle" id="X">
+      <span class="scrollingtext">X - Sweeney Todd: The Demon Barber of Fleet Street</span>
+    </div>
+  </div></a>
+  <a href="/pages/scifi.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Scifi">
+      <span>Sci-Fi</span>
+    </div>
+  </div></a>
+  <a href="/pages/Y.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>Y</span>
+    </div>
+    <div class="filmtitle" id="Y">
+      <span class="scrollingtext">Y - Back to the Future</span>
+    </div>
+  </div></a>
+  <a href="/pages/Z.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>Z</span>
+    </div>
+    <div class="filmtitle" id="Z">
+      <span class="scrollingtext">Z - Blade Runner</span>
+    </div>
+  </div></a>
+  <a href="/pages/AA.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AA</span>
+    </div>
+    <div class="filmtitle" id="AA">
+      <span class="scrollingtext">AA - Escape from New York</span>
+    </div>
+  </div></a>
+  <a href="/pages/thriller.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Thriller">
+      <span>Thriller</span>
+    </div>
+  </div></a>
+  <a href="/pages/AB.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AB</span>
+    </div>
+    <div class="filmtitle" id="AB">
+      <span class="scrollingtext">AB - 5 è il numero perfetto</span>
+    </div>
+  </div></a>
+  <a href="/pages/AC.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AC</span>
+    </div>
+    <div class="filmtitle" id="AC">
+      <span class="scrollingtext">AC - L.A. Confidential</span>
+    </div>
+  </div></a>
+  <a href="/pages/AD.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AD</span>
+    </div>
+    <div class="filmtitle" id="AD">
+      <span class="scrollingtext">AD - Zodiac</span>
+    </div>
+  </div></a>
+  <a href="/pages/war.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="War">
+      <span>War</span>
+    </div>
+  </div></a>
+  <a href="/pages/AE.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AE</span>
+    </div>
+    <div class="filmtitle" id="AE">
+      <span class="scrollingtext">AE - Empire of the Sun</span>
+    </div>
+  </div></a>
+  <a href="/pages/AF.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AF</span>
+    </div>
+    <div class="filmtitle" id="AF">
+      <span class="scrollingtext">AF -  Empire of the Sun</span>
+    </div>
+  </div></a>
+  <a href="/pages/AG.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AG</span>
+    </div>
+    <div class="filmtitle" id="AG">
+      <span class="scrollingtext">AG - Inglorious Basterds</span>
+    </div>
+    </div></a>
+    <a href="/pages/western.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span></span>
+      </div>
+      <div class="filmtitle" id="Western">
+        <span>Western</span>
+      </div>
+    </div></a>
+    <a href="/pages/AH.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span>AH</span>
+      </div>
+      <div class="filmtitle" id="AH">
+        <span class="scrollingtext">AH - The Ballad of Buster Scruggs</span>
+      </div>
+    </div></a>
+    <a href="/pages/AI.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span>AI</span>
+      </div>
+      <div class="filmtitle" id="AI">
+        <span class="scrollingtext">AI -  The Lone Ranger</span>
+      </div>
+    </div></a>
+    <a href="/pages/AJ.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span>AJ</span>
+      </div>
+      <div class="filmtitle" id="AJ">
+        <span class="scrollingtext">AJ - Unforgiven</span>
+      </div>
+  </div></a>
+</div>
+<!-- END OF NAVBAR -->
+
+
+<!-- STICKY LETTERS -->
+<div class="row sticky" id="anchor-point1">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <p class="letters">&nbsp;</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">&nbsp;</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">&nbsp;</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">&nbsp;</p>
+  </div>
+</div>
+<!-- END OF STICKY LETTERS -->
+
+<!-- GALLERY -->
+<div>
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">&nbsp;</p>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">&nbsp;</p>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">&nbsp;</p>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper2">
+      <div class="screencapwrapper2">
+
+      </div>
+    </div>
+  </div>
+    
+</div>
+</div>
+<!-- END OF GALLERY -->
+
+<div style="height:10vh;"></div>
+
+<!-- FOOTER -->
+<div class="row footer fixedfooter" id="footer">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span>Framing graphics</span>
+   <img src="/images/res/logo.svg" height="13px" width="13px" class="logo">
+   </div>
+  <div class="column">
+    <p>Last updated July 5th 2021</p>
+  </div>
+  <div class="column">
+    &nbsp;
+  </div>
+  <div class="column">
+  <button id="topbtn" onclick="topFunction()" title="Go to top">↑</button>
+  </div>
+</div>
+<!-- END OF FOOTER -->
+
+
+
+<!-- BOTTOM SCRIPTS -->
+<script src="/js/script.js"></script>
+<script src="/js/filter.js"></script>
+<script src="/js/lightbox.js"></script>
+<script>
+  lightbox.option({
+    'resizeDuration': 100,
+    'wrapAround': true
+  })
+</script>
+<script src="/js/darkmode.js"></script>
+<!-- END OF SCRIPTS -->
+
+</body>
+</html>

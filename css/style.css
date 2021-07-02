@@ -238,6 +238,26 @@ div.wrapper {
   justify-content: center;
 }
 
+div.wrapper2 {
+	width: 100%;
+  height: calc(24.875vw * 0.5625); /* 16:9 */
+	/* padding-bottom: 56.25%; /* 16:9 */
+	position: relative;
+	background: var(--base-color);
+  display: inline-block;
+}
+
+.screencapwrapper2 {
+  width: 100%;
+  height: calc(24.875vw * 0.5625); /* 16:9 */
+	/* padding-bottom: 56.25%; /* 16:9 */
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .screencap {
  visibility: visible;
@@ -576,6 +596,7 @@ button:hover {
   /*padding-bottom: 10px; */
   background-color: var(--base-color);
   font-family: 'SuisseIntl', normal;
+  font-size: 16px;
 }
 
 .formsubmit{
@@ -585,8 +606,13 @@ button:hover {
   padding-bottom: 10px;
   background-color: var(--accent-color);
   font-family: 'SuisseIntl', normal;
+  font-size: 16px;
   text-align: center;
   color: var(--base-color);
+}
+.formtext {
+  font-family: 'SuisseIntl', normal;
+  font-size: 16px;
 }
 
 .form:active{
@@ -597,22 +623,53 @@ button:hover {
   filter: var(--black-svg);
 }
 
-.box__dragndrop,
-.box__uploading,
-.box__success,
-.box__error {
+.svg {
+  filter: var(--black-svg);
+}
+
+
+#drop-area {
+  border: 1px dashed var(--accent-color);
+  border-radius: 0px;
+  padding: 5px;
+  height: 100%;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+.my-form {
+  margin-bottom: 10px;
+  position: relative;
+}
+#uploadgallery {
+  margin-top: 10px;
+}
+#uploadgallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.uploadbutton {
+  position: relative;
+  top: -10px;
+  left: 100px;
+  width: 10px;
+  height: 50px;
+  background: var(--base-color);
+  cursor: var(--cursor-fg);
+  border-radius: 0px;
+  border: 1px solid #ccc;
+  color:var(--accent-color);
+}
+.uploadbutton:hover {
+  filter: var(--black-svg);
+  background: var(--accent-color);
+}
+#fileelem {
   display: none;
 }
 
-.box.has-advanced-upload {
-  background-color: white;
-  outline: 2px dashed black;
-  outline-offset: -10px;
-}
-.box.has-advanced-upload .box__dragndrop {
-  display: inline;
-}
-
-.box.is-dragover {
-  background-color: gray;
+input:focus {
+  outline:none;
 }

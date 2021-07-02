@@ -16,6 +16,29 @@ Submit your movie - Framing graphics
 </script>
 </head>
 <body>
+<!-- TOP SCRIPTS -->
+<script>
+  function show(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function hide(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  function chwidth(width) {
+  document.getElementById('navbar').style.width = width;
+  }
+  
+  //Get the button:
+  mybutton = document.getElementById("topbtn");
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<!-- END OF SCRIPTS -->
 
 <!-- MENU -->
 <div id="menu">
@@ -473,16 +496,15 @@ Submit your movie - Framing graphics
             
      </div>
     <div class="column" style="height: 99px;">
-      <form class="box" method="post" action="" enctype="multipart/form-data">
-        <div class="box__input">
-          <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
-          <label for="file"><strong>Upload your gallery files</strong><span class="box__dragndrop"> or drag them here</span>.</label>
-          <button class="box__button" type="submit">Upload</button>
-        </div>
-        <div class="box__uploading">Uploading…</div>
-        <div class="box__success">Done!</div>
-        <div class="box__error">Error!<span></span>.</div>
-      </form>
+      <div id="drop-area">
+        <form class="my-form">
+          <p class="formtext">Drag here your gallery files or select them</p>
+          <input type="file" id="fileelem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label class="uploadbutton" for="fileelem"><img src="/images/res/arrowup.svg" class="arrow" widht="10px" height="10px"></label>
+        </form>
+        <!--<progress id="progress-bar" max=100 value=0></progress>-->
+        <div id="uploadgallery"></div>
+      </div>
       <!-- <input type="text" id="uploadgallery" name="uploadgallery" value="Upload your gallery" class="form" style="height: 100%;"> -->
     </div>
     <div class="column">

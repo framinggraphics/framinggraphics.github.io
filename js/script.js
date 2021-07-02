@@ -563,7 +563,7 @@ function createtimecodes() {
 
     $('.wrapper').each(function (i) {
 
-        $(this).append('<a href="' + screencap[i % screencap.length] + '" data-lightbox="lightbox'+ indexnumber[i % indexnumber.length] + '" data-title="Iron Man | '+ code[i % code.length] + '" | "'+ timecode[i % timecode.length] + '"><div class="mouseovercontainer" onMouseOver="show(\'frame' + indexnumber[i % indexnumber.length] + '\')" onMouseOut="hide(\'frame' + indexnumber[i % indexnumber.length] + '\')"><div class="timecodebg" id="frame' + indexnumber[i % indexnumber.length] + '"><span class="timecode">' + timecode[i % timecode.length] + '</span></div></div></a>');
+        $(this).append('<a href="' + screencap[i % screencap.length] + '" data-lightbox="lightbox'+ indexnumber[i % indexnumber.length] + '" data-title="Iron Man | '+ code[i % code.length] + ' | '+ timecode[i % timecode.length] + '"><div class="mouseovercontainer" onMouseOver="show(\'frame' + indexnumber[i % indexnumber.length] + '\')" onMouseOut="hide(\'frame' + indexnumber[i % indexnumber.length] + '\')"><div class="timecodebg" id="frame' + indexnumber[i % indexnumber.length] + '"><span class="timecode">' + timecode[i % timecode.length] + '</span></div></div></a>');
     });
 }
 
