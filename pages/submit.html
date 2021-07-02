@@ -501,7 +501,8 @@ Submit your movie - Framing graphics
       
         <input type="text" id="film" name="film" value="Film" class="form"><br>
         <input type="text" id="gd" name="gd" value="Graphic designer" class="form"><br>
-        <input type="text" id="excel" name="excel" value="Excel" class="form"><br>
+        <input type="file" id="excel" accept="" onchange="handleFiles(this.files)">
+        <label class="uploadexcel" for="excel"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;"></label><br>
             
      </div>
     <div class="column" style="height: 99px;">
@@ -509,7 +510,7 @@ Submit your movie - Framing graphics
         <form class="my-form">
           <p class="formtext">Drag here your gallery files or select them</p>
           <input type="file" id="fileelem" multiple accept="image/*" onchange="handleFiles(this.files)">
-          <label class="uploadbutton" for="fileelem"><img src="/images/res/arrowup.svg" class="arrow" widht="10px" height="10px"></label>
+          <label class="uploadbutton" for="fileelem"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;"></label>
         </form>
         <!--<progress id="progress-bar" max=100 value=0></progress>-->
         <div id="uploadgallery"></div>
@@ -537,7 +538,7 @@ Submit your movie - Framing graphics
       &nbsp;           
      </div>
     <div class="column">
-      <input type="submit" value="Submit" class="formsubmit" style="float: right;">
+      <input type="submit" value="Submit" class="formsubmit" style="float: right; padding: 0px; margin: 0px;">
     </div>
     <div class="column">
   
