@@ -262,10 +262,20 @@ div.wrapper2 {
 .screencap {
  visibility: visible;
  width: 100%;
+ max-height: calc(24.875vw * 0.5625);
  display: flex;
  opacity: 100%;
  margin: 0;
 }
+
+.screencap2 {
+  visibility: visible;
+  width: 95%;
+  max-height: calc(20.875vw * 0.5625);
+  display: flex;
+  opacity: 100%;
+  margin: 0;
+ }
 
 .timecode {
   color: white;
