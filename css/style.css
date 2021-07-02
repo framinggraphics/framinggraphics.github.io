@@ -48,6 +48,14 @@ a:hover {
   cursor: var(--cursor-fg);
 }
 
+.accent {
+  color: var(--accent-color);
+}
+
+.base {
+  color: var(--base-color);
+}
+
 /* Fonts */
 @font-face {
   font-family: 'Monospac821';
