@@ -358,6 +358,7 @@ p.numbers {
   font-family: 'Monospac821', normal;
   font-size: 16px;
   text-align: left;
+  color: var(--accent-color);
 }
 
 div.sticky {
