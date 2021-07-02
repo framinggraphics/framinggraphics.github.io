@@ -477,7 +477,7 @@ Submit your movie - Framing graphics
       &nbsp;
     </div>
     <div class="twocolumns">
-      <span><p style="color: var(--accent-color);">Submit your movie</p><img src="/images/res/arrowdown.svg" class="arrow" width="20px" height="20px"></span>
+      <span><p style="color: var(--accent-color);">Submit your movie</p><!--<img src="/images/res/arrowdown.svg" class="arrow" width="20px" height="20px">--></span>
     </div>
     <div class="column">
   
@@ -507,7 +507,7 @@ Submit your movie - Framing graphics
     <div class="column" style="height: 99px;">
       <div id="drop-area">
         <form class="my-form">
-          <p class="formtext">Drag here your gallery files or select them</p>
+          <p class="formtext" style="position: absolute; overflow: hidden;">Drag here your gallery files or select them</p>
           <input type="file" id="fileelem" multiple accept="image/*" onchange="handleFiles(this.files)">
           <label class="uploadbutton" for="fileelem"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;"></label>
         </form>

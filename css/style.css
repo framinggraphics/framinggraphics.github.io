@@ -627,7 +627,7 @@ button:hover {
 }
 
 .formsubmit{
-  width: 13%;
+  min-width: 20%;
   border: 1px solid var(--accent-color);
   height: 25px;
   background-color: var(--accent-color);
@@ -679,12 +679,19 @@ button:hover {
 }
 
 .uploadbutton {
-  display: block;
   position: relative;
-  top: -25px;
-  left: 393px;
-  width: 59px;
-  height: 95px;
+  float:right;
+  top: -5px;
+  right: -5px;
+  width: 20%;
+  /* Firefox */
+height: -moz-calc(100% + 10px);
+/* WebKit */
+height: -webkit-calc(100% -+ 10px);
+/* Opera */
+height: -o-calc(100% + 10px);
+/* Standard */
+height: calc(100% + 10px);
   background: var(--base-color);
   cursor: var(--cursor-fg);
   border-radius: 0px;
@@ -757,4 +764,12 @@ input:focus {
 
 .legend {
   display: none;
+}
+
+.lenghtvalue {
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: 'Monospac821', normal;
+    z-index: 299;
 }
