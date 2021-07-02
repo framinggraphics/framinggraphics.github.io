@@ -621,7 +621,6 @@ button:hover {
   width: 13%;
   border: 1px solid var(--accent-color);
   height: 25px;
-  padding-bottom: 10px;
   background-color: var(--accent-color);
   font-family: 'SuisseIntl', normal;
   font-size: 16px;
