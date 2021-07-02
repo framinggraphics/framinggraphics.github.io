@@ -708,7 +708,7 @@ height: calc(100% + 10px);
   background: var(--base-color);
   cursor: var(--cursor-fg);
   border-radius: 0px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   color:var(--accent-color);
 }
 .uploadexcel:hover {
@@ -772,4 +772,44 @@ input:focus {
     padding-right: 3px;
     font-family: 'Monospac821', normal;
     z-index: 299;
+}
+
+.file-input-wrapper {
+  height: 30px;
+  margin: 2px;
+  overflow: hidden;
+  position: relative;
+  width: 118px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.file-input-wrapper>input[type="file"] {
+  width: 100%;
+  /* font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer; */
+}
+
+.file-input-wrapper>.btn-file-input {
+  width: 100%;
+  height: 100%;
+  background: var(--base-color);
+  cursor: var(--cursor-fg);
+  border-radius: 0px;
+  border: 1px solid var(--accent-color);
+  color:var(--accent-color);
+}
+
+.file-input-wrapper:hover>.btn-file-input {
+  background-color: #494949;
+}
+
+#img_text {
+  float: right;
+  margin-right: -80px;
+  margin-top: -14px;
 }

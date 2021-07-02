@@ -37,6 +37,12 @@ Submit your movie - Framing graphics
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  (function($) {
+  $('input[type="file"]').bind('change', function() {
+    $("#excelinput").html($('input[type="file"]').val());
+  });
+})(jQuery)
 </script>
 <!-- END OF SCRIPTS -->
 
@@ -500,8 +506,15 @@ Submit your movie - Framing graphics
       
         <input type="text" id="film" name="film" value="Film" class="form"><br>
         <input type="text" id="gd" name="gd" value="Graphic designer" class="form"><br>
-        <input type="file" id="excel" accept="" onchange="handleFiles(this.files)">
-        <label class="uploadexcel" for="excel"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;"></label><br>
+        <div class="file-input-wrapper">
+        <button class="btn-file-input"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;">Excel</button>
+        <input type="file" name="image" id="image" value="" />
+        </div>
+        <span id="excelinput"></span>
+
+
+
+        <!-- <label class="uploadexcel" for="excel"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;"><input type="file" id="excel" multiple accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" onchange="handleFiles(this.files)"></label><br> -->
             
      </div>
     <div class="column" style="height: 99px;">
@@ -511,7 +524,7 @@ Submit your movie - Framing graphics
           <input type="file" id="fileelem" multiple accept="image/*" onchange="handleFiles(this.files)">
           <label class="uploadbutton" for="fileelem"><img src="/images/res/arrowup.svg" class="arrow" widht="15px" height="15px" style="margin-left: 5px; margin-top: 5px;"></label>
         </form>
-        <!--<progress id="progress-bar" max=100 value=0></progress>-->
+        <!-- <progress id="progress-bar" max=100 value=0></progress> -->
         <div id="uploadgallery"></div>
       </div>
       <!-- <input type="text" id="uploadgallery" name="uploadgallery" value="Upload your gallery" class="form" style="height: 100%;"> -->
