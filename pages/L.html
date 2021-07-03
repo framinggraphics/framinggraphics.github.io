@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href="/css/lightbox.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" lang="en" content="A. Iron Man"/>
+<title>     
+A - Iron Man - Framing graphics
+</title>  
+<link rel="shortcut icon" href="/images/favicon/16x16.png" type="image/x-icon"> 
+<script>
+  const colorScheme = localStorage.getItem("color-scheme") || "light-mode";
+</script>
+</head>
+<body>
+<!-- TOP SCRIPTS -->
+<script>
+    function show(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function hide(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    function chwidth(width) {
+    document.getElementById('navbar').style.width = width;
+    }
+    
+    //Get the button:
+    mybutton = document.getElementById("topbtn");
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+    function showlegend() {
+        var x = document.getElementById("legend");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      } 
+</script>
+<!-- END OF SCRIPTS -->
+
+<div id="gallery"> <!-- OVERALL DIV FOR FILTERS -->
+
+<!-- MENU -->
+<div id="menu">
+  <div style="float: left;"><a href="/landing.html"><img src="/images/res/logo.svg" height="25px" width="25px" style="padding-top: 5px; margin-left: 0px; margin-top: -2px;" class="logo"></a></div>
+  <div class="row">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span class="sitetitle">Framing graphics</span> <span class="movietitle">Romeo + Juliet</span>
+  </div>
+  <div class="column">
+    <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">Resources</span>
+    <div class="dropdown-content">
+      <span style="line-height: 25px;">&nbsp;</span><br>
+      <a href="/pages/categories.html">Categories</a><br>
+      <a href="/pages/supports.html">Supports</a><br>
+      <a href="/pages/typography.html">Typography</a><br>
+      <br>
+      <a href="/pages/data.html">Data</a><br>
+      <a href="/pages/submit.html">Submit your film</a>
+    </div>
+    </div>
+    <div class="dropdown" style="width: calc(100%/3); float: left;"><span class="dropbtn">About us</span>
+      <div class="dropdown-content">
+        <span style="line-height: 25px;">&nbsp;</span><br>
+        <a href="/pages/project.html">Project</a><br>
+        <a href="/pages/team.html">Team</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    &nbsp;
+  </div>
+  <div class="column">
+    <button class="darkmodebtn" style="font-size: 20px;">●</button>&nbsp;&nbsp;
+    <a href="https://www.instagram.com/claudianazionale/" target="_blank"><span class="linkmenu">c</span></a>&nbsp;&nbsp;
+    <a href="https://www.instagram.com/franckfalcone/" target="_blank"><span class="linkmenu">f</span></a>&nbsp;&nbsp;
+    <a href="https://www.instagram.com/_mat1eo/" target="_blank"><span class="linkmenu">m</span></a>
+  </div>
+</div>
+</div>
+<!-- END OF MENU -->
+
+<!-- FILTERS -->
+<div id="topblock">
+  <div class="row">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <!-- LEGEND CAPTION -->
+    <span class="monospac821" style="color: var(--accent-color); cursor: var(--cursor-fg);" onclick="showlegend()">i</span><br>
+    <div id="legend" class="legend">
+<div class="gridcontainer" id="legend">
+  
+  <div class="grid">
+<div class="cell" id="def1" onmouseover="show('l1')" onmouseout="hide('l1')">1</div>
+<div class="cell" id="def1" onmouseover="show('l2')" onmouseout="hide('l2')">2</div>
+<div class="cell" id="def1" onmouseover="show('l3')" onmouseout="hide('l3')">3</div>
+<div class="cell" id="def1" onmouseover="show('l4')" onmouseout="hide('l4')">4</div>
+<div class="cell" id="def1" onmouseover="show('l5')" onmouseout="hide('l5')">5</div>
+<div class="cell" id="def1" onmouseover="show('l6')" onmouseout="hide('l6')">6</div>
+<div class="cell" id="def1" onmouseover="show('l7')" onmouseout="hide('l7')">7</div>
+<div class="cell" id="def1" onmouseover="show('l8')" onmouseout="hide('l8')">8</div>
+<div class="cell" id="def1" onmouseover="show('l9')" onmouseout="hide('l9')">9</div>
+<div class="cell" id="def1" onmouseover="show('l10')" onmouseout="hide('l10')">10</div>
+</div>
+</div>
+</div>
+<!-- END OF LEGEND CAPTION -->
+  </div>
+  <div class="column">
+    <div style="width: calc(100%/3); float: left;" class="monospac821">&nbsp;<br><span style="color: var(--accent-color);">Category</span><br><span style="color: var(--accent-color);">Support</span><br><span style="color: var(--accent-color);">Typography</span></div>
+    <div style="width: calc(100%/3*2); float: left;">
+      <span id="l1" class="leg monospac821">&nbsp; <br>Title <br>Application <br>Bodonian </span>
+      <span id="l2" class="leg monospac821">&nbsp; <br>Figure of speech <br>Digital <br>Fantasy </span>
+      <span id="l3" class="leg monospac821">&nbsp; <br>Herald <br>Post-production <br>Slab </span>
+      <span id="l4" class="leg monospac821">&nbsp; <br>Hero prop <br>Print <br>Slab </span>
+      <span id="l5" class="leg monospac821">&nbsp; <br>Link <br>&nbsp; <br>Linear </span>
+      <span id="l6" class="leg monospac821">&nbsp; <br>Point of view <br>&nbsp; <br>Medieval </span>
+      <span id="l7" class="leg monospac821">&nbsp; <br>Support <br>&nbsp; <br>Ornate </span>
+      <span id="l8" class="leg monospac821">&nbsp; <br>Context <br>&nbsp; <br>Script </span>
+      <span id="l9" class="leg monospac821">&nbsp; <br>&nbsp; <br>&nbsp; <br>Transitional </span>
+      <span id="l10" class="leg monospac821">&nbsp; <br>&nbsp; <br>&nbsp; <br>Venetian </span>
+      </div>
+    <div style="width: calc(100%/3); float: left;">&nbsp;</div>
+  </div>
+  <div class="twocolumns monospac821">
+  <span class="filter-categories">
+  <input type="checkbox" id="filter-all" class="chk-btn filter-input filter-all" name="filter" checked/><label for="filter-all" class="filter-label">All</label><br>
+  <input type="checkbox" id="title" class="chk-btn filter-input" name="title" /><label for="title" class="filter-label title">Title</label> |
+  <input type="checkbox" id="figureofspeech" class="chk-btn filter-input" name="Figureofspeech" /><label for="figureofspeech" class="filter-label figureofspeech">Figure of speech</label> |
+  <input type="checkbox" id="herald" class="chk-btn filter-input" name="herald" /><label for="herald" class="filter-label herald">Herald</label> |
+  <input type="checkbox" id="heroprop" class="chk-btn filter-input" name="heroprop" /><label for="heroprop" class="filter-label heroprop">Hero Prop</label> |
+  <input type="checkbox" id="link" class="chk-btn filter-input" name="link" /><label for="link" class="filter-label link">Link</label> |
+  <input type="checkbox" id="pointofview" class="chk-btn filter-input" name="pointofview" /><label for="pointofview" class="filter-label pointofview">Point of view</label> |
+  <input type="checkbox" id="support" class="chk-btn filter-input" name="support" /><label for="support" class="filter-label support">Support</label> |
+  <input type="checkbox" id="context" class="chk-btn filter-input" name="context" /><label for="context" class="filter-label context">Context</label>
+  
+
+  <br>
+  <input type="checkbox" id="application" class="chk-btn filter-input" name="application" /><label for="application" class="filter-label application">Application</label> |
+  <input type="checkbox" id="digital" class="chk-btn filter-input" name="digital" /><label for="digital" class="filter-label digital">Digital</label> |
+  <input type="checkbox" id="postproduction" class="chk-btn filter-input" name="postproduction" /><label for="postproduction" class="filter-label postproduction">Postproduction</label> |
+  <input type="checkbox" id="print" class="chk-btn filter-input" name="print" /><label for="print" class="filter-label print">Print</label>
+
+
+  <br>
+  <input type="checkbox" id="bodonian" class="chk-btn filter-input" name="bodonian" /><label for="bodonian" class="filter-label bodonian">Bodonian</label> |
+  <input type="checkbox" id="fantasy" class="chk-btn filter-input" name="fantasy" /><label for="fantasy" class="filter-label fantasy">Fantasy</label> |
+  <input type="checkbox" id="slab" class="chk-btn filter-input" name="slab" /><label for="slab" class="filter-label slab">Slab</label> |
+  <input type="checkbox" id="lapidary" class="chk-btn filter-input" name="lapidary" /><label for="lapidary" class="filter-label lapidary">Lapidary</label> |
+  <input type="checkbox" id="linear" class="chk-btn filter-input" name="linear" /><label for="linear" class="filter-label linear">Linear</label> |
+  <input type="checkbox" id="medieval" class="chk-btn filter-input" name="medieval" /><label for="medieval" class="filter-label medieval">Medieval</label> |
+  <input type="checkbox" id="ornate" class="chk-btn filter-input" name="ornate" /><label for="ornate" class="filter-label ornate">Ornate</label> |
+  <input type="checkbox" id="script" class="chk-btn filter-input" name="script" /><label for="script" class="filter-label script">Script</label> |
+  <input type="checkbox" id="transitional" class="chk-btn filter-input" name="transitional" /><label for="transitional" class="filter-label transitional">Transitional</label> |
+  <input type="checkbox" id="venetian" class="chk-btn filter-input" name="venetian" /><label for="venetian" class="filter-label venetian">Venetian</label>
+</span>
+
+
+  </div>
+</div>
+</div>
+<!--END OF FILTERS -->
+
+<!-- NAVBAR -->
+<div id="navbar" class="hidescrollbar">
+  <!-- <a href="/index.html"><img src="/images/res/logo.svg" height="25px" width="25px" style="padding-top: 5px; margin-left: -2px;" class="logo"></a> -->
+    <div style="height: 30px;"></div>
+    <a href="/pages/adventure.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span></span>
+      </div>
+      <div class="filmtitle" id="Adventure">
+        <span>Adventure</span>
+      </div>
+    </div></a>
+    <a href="/pages/A.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>A</span>
+    </div>
+    <div class="filmtitle" id="A">
+      <span class="scrollingtext">A - Iron Man</span>
+    </div>
+  </div></a>
+  <a href="/pages/B.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>B</span>
+    </div>
+    <div class="filmtitle" id="B">
+      <span class="scrollingtext">B - Jurassic Park</span>
+    </div>
+  </div></a>
+  <a href="/pages/C.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>C</span>
+    </div>
+    <div class="filmtitle" id="C">
+      <span class="scrollingtext">C - Pirates of the Caribbean: Dead Man’s Chest</span>
+    </div>
+  </div></a>
+  <a href="/pages/biography.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Biography">
+      <span>Biography</span>
+    </div>
+  </div></a>
+  <a href="/pages/D.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>D</span>
+    </div>
+    <div class="filmtitle" id="D">
+      <span class="scrollingtext">D - All the Money in the World</span>
+    </div>
+  </div></a>
+  <a href="/pages/E.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>E</span>
+    </div>
+    <div class="filmtitle" id="E">
+      <span class="scrollingtext">E - Ford v Ferrari</span>
+    </div>
+  </div></a>
+  <a href="/pages/F.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>F</span>
+    </div>
+    <div class="filmtitle" id="F">
+      <span class="scrollingtext">F - The Founder</span>
+    </div>
+  </div></a>
+  <a href="/pages/comedy.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Comedy">
+      <span>Comedy</span>
+    </div>
+  </div></a>
+  <a href="/pages/G.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>G</span>
+    </div>
+    <div class="filmtitle" id="G">
+      <span class="scrollingtext">G - Charlie and the Chocolate Factory</span>
+    </div>
+  </div></a>
+  <a href="/pages/H.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>H</span>
+    </div>
+    <div class="filmtitle" id="H">
+      <span class="scrollingtext">H - Scott Pilgrim vs. the World</span>
+    </div>
+  </div></a>
+  <a href="/pages/I.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>I</span>
+    </div>
+    <div class="filmtitle" id="I">
+      <span class="scrollingtext">I - The Grand Budapest Hotel</span>
+    </div>
+  </div></a>
+  <a href="/pages/drama.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Drama">
+      <span>Drama</span>
+    </div>
+  </div></a>
+  <a href="/pages/J.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>J</span>
+    </div>
+    <div class="filmtitle" id="J">
+      <span class="scrollingtext">J - Dogman</span>
+    </div>
+  </div></a>
+  <a href="/pages/K.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>K</span>
+    </div>
+    <div class="filmtitle" id="K">
+      <span class="scrollingtext">K - Her</span>
+    </div>
+  </div></a>
+  <a href="/pages/L.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span  style="color: gray;">L</span>
+    </div>
+    <div class="filmtitle" id="L">
+      <span class="scrollingtext"  style="color: gray;">L - William Shakespeare’s Romeo + Juliet</span>
+    </div>
+  </div></a>
+  <a href="/pages/fantasy.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Fantasy">
+      <span>Fantasy</span>
+    </div>
+  </div></a>
+  <a href="/pages/M.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>M</span>
+    </div>
+    <div class="filmtitle" id="M">
+      <span class="scrollingtext">M - Harry Potter and the Prisoner of Azkaban</span>
+    </div>
+  </div></a>
+  <a href="/pages/N.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>N</span>
+    </div>
+    <div class="filmtitle" id="N">
+      <span class="scrollingtext">N - The Lord of the Rings: The Fellowship of the Ring</span>
+    </div>
+  </div></a>
+  <a href="/pages/O.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>O</span>
+    </div>
+    <div class="filmtitle" id="O">
+      <span class="scrollingtext">O - The Shape of Water</span>
+    </div>
+  </div></a>
+  <a href="/pages/history.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="History">
+      <span>History</span>
+    </div>
+  </div></a>
+  <a href="/pages/P.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>P</span>
+    </div>
+    <div class="filmtitle" id="P">
+      <span class="scrollingtext">P - Bridge of Spies</span>
+    </div>
+  </div></a>
+  <a href="/pages/Q.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>Q</span>
+    </div>
+    <div class="filmtitle" id="Q">
+      <span class="scrollingtext">Q - Elizabeth: The Golden Age</span>
+    </div>
+  </div></a>
+  <a href="/pages/R.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>R</span>
+    </div>
+    <div class="filmtitle" id="R">
+      <span class="scrollingtext">R - Gangs of New York</span>
+    </div>
+  </div></a>
+  <a href="/pages/horror.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Horror">
+      <span>Horror</span>
+    </div>
+  </div></a>
+  <a href="/pages/S.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>S</span>
+    </div>
+    <div class="filmtitle" id="S">
+      <span class="scrollingtext">S - Death Proof</span>
+    </div>
+  </div></a>
+  <a href="/pages/T.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>T</span>
+    </div>
+    <div class="filmtitle" id="T">
+      <span class="scrollingtext">T - The Stuff</span>
+    </div>
+  </div></a>
+  <a href="/pages/U.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>U</span>
+    </div>
+    <div class="filmtitle" id="U">
+      <span class="scrollingtext">U - They Live</span>
+    </div>
+  </div></a>
+  <a href="/pages/musical.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Musical">
+      <span>Musical</span>
+    </div>
+  </div></a>
+  <a href="/pages/V.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>V</span>
+    </div>
+    <div class="filmtitle" id="V">
+      <span class="scrollingtext">V - Chicago</span>
+    </div>
+  </div></a>
+  <a href="/pages/W.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>W</span>
+    </div>
+    <div class="filmtitle" id="W">
+      <span class="scrollingtext">W - Moulin Rouge!</span>
+    </div>
+  </div></a>
+  <a href="/pages/X.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>X</span>
+    </div>
+    <div class="filmtitle" id="X">
+      <span class="scrollingtext">X - Sweeney Todd: The Demon Barber of Fleet Street</span>
+    </div>
+  </div></a>
+  <a href="/pages/scifi.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Scifi">
+      <span>Sci-Fi</span>
+    </div>
+  </div></a>
+  <a href="/pages/Y.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>Y</span>
+    </div>
+    <div class="filmtitle" id="Y">
+      <span class="scrollingtext">Y - Back to the Future</span>
+    </div>
+  </div></a>
+  <a href="/pages/Z.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>Z</span>
+    </div>
+    <div class="filmtitle" id="Z">
+      <span class="scrollingtext">Z - Blade Runner</span>
+    </div>
+  </div></a>
+  <a href="/pages/AA.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AA</span>
+    </div>
+    <div class="filmtitle" id="AA">
+      <span class="scrollingtext">AA - Escape from New York</span>
+    </div>
+  </div></a>
+  <a href="/pages/thriller.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="Thriller">
+      <span>Thriller</span>
+    </div>
+  </div></a>
+  <a href="/pages/AB.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AB</span>
+    </div>
+    <div class="filmtitle" id="AB">
+      <span class="scrollingtext">AB - 5 is the perfect number</span>
+    </div>
+  </div></a>
+  <a href="/pages/AC.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AC</span>
+    </div>
+    <div class="filmtitle" id="AC">
+      <span class="scrollingtext">AC - L.A. Confidential</span>
+    </div>
+  </div></a>
+  <a href="/pages/AD.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AD</span>
+    </div>
+    <div class="filmtitle" id="AD">
+      <span class="scrollingtext">AD - Zodiac</span>
+    </div>
+  </div></a>
+  <a href="/pages/war.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span></span>
+    </div>
+    <div class="filmtitle" id="War">
+      <span>War</span>
+    </div>
+  </div></a>
+  <a href="/pages/AE.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AE</span>
+    </div>
+    <div class="filmtitle" id="AE">
+      <span class="scrollingtext">AE - Empire of the Sun</span>
+    </div>
+  </div></a>
+  <a href="/pages/AF.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AF</span>
+    </div>
+    <div class="filmtitle" id="AF">
+      <span class="scrollingtext">AF -  Empire of the Sun</span>
+    </div>
+  </div></a>
+  <a href="/pages/AG.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+    <div class="filmletter">
+      <span>AG</span>
+    </div>
+    <div class="filmtitle" id="AG">
+      <span class="scrollingtext">AG - Inglorious Basterds</span>
+    </div>
+    </div></a>
+    <a href="/pages/western.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span></span>
+      </div>
+      <div class="filmtitle" id="Western">
+        <span>Western</span>
+      </div>
+    </div></a>
+    <a href="/pages/AH.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span>AH</span>
+      </div>
+      <div class="filmtitle" id="AH">
+        <span class="scrollingtext">AH - The Ballad of Buster Scruggs</span>
+      </div>
+    </div></a>
+    <a href="/pages/AI.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span>AI</span>
+      </div>
+      <div class="filmtitle" id="AI">
+        <span class="scrollingtext">AI -  The Lone Ranger</span>
+      </div>
+    </div></a>
+    <a href="/pages/AJ.html"><div class="marquee" onmouseover="chwidth('200px')" onmouseout="chwidth('26px')">
+      <div class="filmletter">
+        <span>AJ</span>
+      </div>
+      <div class="filmtitle" id="AJ">
+        <span class="scrollingtext">AJ - Unforgiven</span>
+      </div>
+  </div></a>
+</div>
+<!-- END OF NAVBAR -->
+
+
+<!-- CLASSIFICATION BLOCK -->
+<div class="classificationblock" id="classificationblock">
+</div>
+<!-- END OF CLASSIFICATION BLOCK -->
+
+
+
+<!-- STICKY LETTERS -->
+<div class="row sticky" id="anchor-point1">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <p class="letters">a</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">b</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">c</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">d</p>
+  </div>
+</div>
+<!-- END OF STICKY LETTERS -->
+
+<!-- GALLERY -->
+<div class="filter-wrap">
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">1</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification0')" onMouseOut="hide('classification0')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification1')" onMouseOut="hide('classification1')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification2')" onMouseOut="hide('classification2')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification3')" onMouseOut="hide('classification3')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">2</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification4')" onMouseOut="hide('classification4')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification5')" onMouseOut="hide('classification5')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification6')" onMouseOut="hide('classification6')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification7')" onMouseOut="hide('classification7')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">3</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification8')" onMouseOut="hide('classification8')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification9')" onMouseOut="hide('classification9')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification10')" onMouseOut="hide('classification10')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification11')" onMouseOut="hide('classification11')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">4</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification12')" onMouseOut="hide('classification12')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification13')" onMouseOut="hide('classification13')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification14')" onMouseOut="hide('classification14')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification15')" onMouseOut="hide('classification15')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">5</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification16')" onMouseOut="hide('classification16')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification17')" onMouseOut="hide('classification17')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification18')" onMouseOut="hide('classification18')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification19')" onMouseOut="hide('classification19')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">6</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification20')" onMouseOut="hide('classification20')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification21')" onMouseOut="hide('classification21')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification22')" onMouseOut="hide('classification22')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification23')" onMouseOut="hide('classification23')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">7</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification24')" onMouseOut="hide('classification24')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification25')" onMouseOut="hide('classification25')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification26')" onMouseOut="hide('classification26')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification27')" onMouseOut="hide('classification27')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">8</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification28')" onMouseOut="hide('classification28')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification29')" onMouseOut="hide('classification29')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification30')" onMouseOut="hide('classification30')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification31')" onMouseOut="hide('classification31')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row sticky" id="anchor-point2">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">e</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">f</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">g</p>
+  </div>
+  <div class="column">
+    &nbsp;
+    <p class="letters">h</p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">1</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification32')" onMouseOut="hide('classification32')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification33')" onMouseOut="hide('classification33')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification34')" onMouseOut="hide('classification34')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification35')" onMouseOut="hide('classification35')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">2</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification36')" onMouseOut="hide('classification36')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification37')" onMouseOut="hide('classification37')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification038')" onMouseOut="hide('classification38')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification39')" onMouseOut="hide('classification39')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">3</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification40')" onMouseOut="hide('classification40')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification41')" onMouseOut="hide('classification41')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification42')" onMouseOut="hide('classification42')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification43')" onMouseOut="hide('classification43')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">4</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification44')" onMouseOut="hide('classification44')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification45')" onMouseOut="hide('classification45')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification46')" onMouseOut="hide('classification46')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification47')" onMouseOut="hide('classification47')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">5</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification48')" onMouseOut="hide('classification48')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification49')" onMouseOut="hide('classification49')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification50')" onMouseOut="hide('classification50')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification51')" onMouseOut="hide('classification51')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">6</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification52')" onMouseOut="hide('classification52')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification53')" onMouseOut="hide('classification53')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification54')" onMouseOut="hide('classification54')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification55')" onMouseOut="hide('classification55')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="numbercolumn">
+  <p class="numbers">7</p>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification56')" onMouseOut="hide('classification56')">
+      
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification57')" onMouseOut="hide('classification57')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification58')" onMouseOut="hide('classification58')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="wrapper" onMouseOver="show('classification59')" onMouseOut="hide('classification59')">
+      <div class="screencapwrapper">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="filter-no-item">Sorry, no items match your filter selection(s).</div> -->
+<div class="filter-mask"></div> <!-- mask is last -->
+</div>
+<!-- END OF GALLERY -->
+
+<div style="height:10vh;"></div>
+
+<!-- FOOTER -->
+<div class="row footer" id="footer">
+  <div class="numbercolumn">
+    &nbsp;
+  </div>
+  <div class="column">
+    <span>Framing graphics</span>
+   <img src="/images/res/logo.svg" height="13px" width="13px" class="logo">
+
+  
+   </div>
+  <div class="column">
+    <p>Last updated July 5th 2021</p>
+  </div>
+  <div class="column">
+    &nbsp;
+  </div>
+  <div class="column">
+  <button id="topbtn" onclick="topFunction()" title="Go to top"><img src="/images/res/arrowup.svg" class="arrow" width="20px" height="20px"></button>
+  </div>
+</div>
+<!-- END OF FOOTER -->
+
+</div> <!-- END OF OVERALL DIV FOR FILTERS -->
+
+<!-- BOTTOM SCRIPTS -->
+<script src="/js/scriptL.js"></script>
+<script src="/js/filter.js"></script>
+<script src="/js/lightbox.js"></script>
+<script>
+  lightbox.option({
+    'resizeDuration': 100,
+    'wrapAround': true
+  })
+</script>
+<script src="/js/darkmode.js"></script>
+<!-- END OF SCRIPTS -->
+
+</body>
+</html>
