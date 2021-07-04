@@ -178,7 +178,8 @@ $(document).ready(function () {
             "/images/L/1_29_43.png",
             "/images/L/1_37_33.png",
             "/images/L/1_39_10.png",
-            "/images/L/1_51_46.png", ];
+            "/images/L/1_51_46.png",
+                                     ];
     
     
         var screencapthumb = [
@@ -236,7 +237,8 @@ $(document).ready(function () {
             "/images/L/thumb_1_29_43.png",
             "/images/L/thumb_1_37_33.png",
             "/images/L/thumb_1_39_10.png",
-            "/images/L/thumb_1_51_46.png", ];
+            "/images/L/thumb_1_51_46.png",
+                                          ];
     
     
     function createclasses() {
