@@ -75,6 +75,7 @@ $(document).ready(function () {
             "0:01:43",
             "0:01:45",
             "0:01:49",
+            "0:02:05",
             "0:02:07",
             "0:02:16",
             "0:02:22",
@@ -107,6 +108,7 @@ $(document).ready(function () {
             "0:13:37",
             "0:13:40",
             "0:13:44",
+            "0:15:57",
             "0:19:30",
             "0:20:08",
             "0:46:54",
@@ -132,6 +134,7 @@ $(document).ready(function () {
             "/images/L/0_01_43.png",
             "/images/L/0_01_45.png",
             "/images/L/0_01_49.png",
+            "/images/L/0_02_05.png",
             "/images/L/0_02_07.png",
             "/images/L/0_02_16.png",
             "/images/L/0_02_22.png",
@@ -164,6 +167,7 @@ $(document).ready(function () {
             "/images/L/0_13_37.png",
             "/images/L/0_13_40.png",
             "/images/L/0_13_44.png",
+            "/images/L/0_15_57.png",
             "/images/L/0_19_30.png",
             "/images/L/0_20_08.png",
             "/images/L/0_46_54.png",
@@ -178,8 +182,7 @@ $(document).ready(function () {
             "/images/L/1_29_43.png",
             "/images/L/1_37_33.png",
             "/images/L/1_39_10.png",
-            "/images/L/1_51_46.png",
-                                     ];
+            "/images/L/1_51_46.png", ];
     
     
         var screencapthumb = [
@@ -191,6 +194,7 @@ $(document).ready(function () {
             "/images/L/thumb_0_01_43.png",
             "/images/L/thumb_0_01_45.png",
             "/images/L/thumb_0_01_49.png",
+            "/images/L/thumb_0_02_05.png",
             "/images/L/thumb_0_02_07.png",
             "/images/L/thumb_0_02_16.png",
             "/images/L/thumb_0_02_22.png",
@@ -223,6 +227,7 @@ $(document).ready(function () {
             "/images/L/thumb_0_13_37.png",
             "/images/L/thumb_0_13_40.png",
             "/images/L/thumb_0_13_44.png",
+            "/images/L/thumb_0_15_57.png",
             "/images/L/thumb_0_19_30.png",
             "/images/L/thumb_0_20_08.png",
             "/images/L/thumb_0_46_54.png",
@@ -237,8 +242,7 @@ $(document).ready(function () {
             "/images/L/thumb_1_29_43.png",
             "/images/L/thumb_1_37_33.png",
             "/images/L/thumb_1_39_10.png",
-            "/images/L/thumb_1_51_46.png",
-                                          ];
+            "/images/L/thumb_1_51_46.png", ];
     
     
     function createclasses() {
