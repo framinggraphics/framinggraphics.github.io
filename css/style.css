@@ -694,13 +694,13 @@ button:hover {
   right: -5px;
   width: 20%;
   /* Firefox */
-height: -moz-calc(100% + 10px);
-/* WebKit */
-height: -webkit-calc(100% -+ 10px);
-/* Opera */
-height: -o-calc(100% + 10px);
-/* Standard */
-height: calc(100% + 10px);
+  height: -moz-calc(100% + 10px);
+  /* WebKit */
+  height: -webkit-calc(100% -+ 10px);
+  /* Opera */
+  height: -o-calc(100% + 10px);
+  /* Standard */
+  height: calc(100% + 10px);
   background-color: var(--base-color);
   cursor: var(--cursor-fg);
   border-radius: 0px;
@@ -838,4 +838,16 @@ input:focus {
   min-width: 100%;
   min-height: 100%;
   filter: opacity(20%);
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: gray;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
 }
