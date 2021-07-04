@@ -636,7 +636,15 @@ button:hover {
   font-size: 16px;
   text-align: center;
   color: var(--base-color);
+  cursor: var(--cursor-fg);
 }
+
+.formsubmit:hover{
+  border: 1px solid var(--accent-color);
+  background-color: var(--base-color);
+  color: var(--accent-color);
+}
+
 .formtext {
   font-family: 'SuisseIntl', normal;
   font-size: 16px;
@@ -693,15 +701,16 @@ height: -webkit-calc(100% -+ 10px);
 height: -o-calc(100% + 10px);
 /* Standard */
 height: calc(100% + 10px);
-  background: var(--base-color);
+  background-color: var(--base-color);
   cursor: var(--cursor-fg);
   border-radius: 0px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--accent-color);
   color:var(--accent-color);
+  filter: var(--black-svg);
 }
 .uploadbutton:hover {
-  filter: var(--black-svg);
-  background: var(--accent-color);
+  filter: var(--white-svg);
+  background-color: var(--base-color);
 }
 
 .uploadexcel {
@@ -776,13 +785,17 @@ input:focus {
 }
 
 .file-input-wrapper {
-  height: 30px;
-  margin: 2px;
+  height: calc(100%/3.333);
   overflow: hidden;
   position: relative;
-  width: 118px;
+  width: 100%;
   background-color: #fff;
   cursor: pointer;
+  font-family: 'SuisseIntl', normal;
+  font-size: 16px;
+  text-align: left;
+  filter: var(--black-svg);
+  
 }
 
 .file-input-wrapper>input[type="file"] {
@@ -803,10 +816,13 @@ input:focus {
   border-radius: 0px;
   border: 1px solid var(--accent-color);
   color:var(--accent-color);
+  text-align: left;
+  filter: var(--black-svg);
 }
 
 .file-input-wrapper:hover>.btn-file-input {
-  background-color: #494949;
+  background-color: var(--base-color);
+  filter: var(--white-svg);
 }
 
 #img_text {
