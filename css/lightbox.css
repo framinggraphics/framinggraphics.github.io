@@ -203,3 +203,13 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+/* Hide navigation */
+
+.lb-nav {
+  display: none !important;
+}
+
+.lb-number {
+  display: none !important;
+}
